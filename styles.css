@@ -1,0 +1,200 @@
+/* great-vibes-regular - latin */
+@font-face {
+    font-display: swap; 
+    font-family: 'Great Vibes';
+    font-style: normal;
+    font-weight: 400;
+    src: url('assets/fonts/great-vibes-v21-latin-regular.woff2') format('woff2'); 
+  }
+  
+  /* edu-vic-wa-nt-hand-regular - latin */
+@font-face {
+  font-display: swap; 
+  font-family: 'Edu VIC WA NT Hand';
+  font-style: normal;
+  font-weight: 400;
+  src: url('assets/fonts/edu-vic-wa-nt-hand-v3-latin-regular.woff2') format('woff2'); 
+}
+
+/* edu-vic-wa-nt-hand-600 - latin */
+@font-face {
+  font-display: swap; 
+  font-family: 'Edu VIC WA NT Hand';
+  font-style: normal;
+  font-weight: 600;
+  src: url('assets/fonts/edu-vic-wa-nt-hand-v3-latin-600.woff2') format('woff2'); 
+}
+
+
+:root { /*colors*/
+    --hero-text: #FFFFFF;
+
+  }
+
+*,*::before,*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    display: block;
+    max-inline-size: 100%;
+    block-size: auto;
+}
+
+button {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+
+body {
+    background-color: var(--hero-text);
+    font-family: 'Edu VIC WA NT Hand';
+    font-style: normal;
+    font-size: 17px;
+}
+
+.primary_navigation_fixed {
+    /* border: 2px solid red; */
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    position:fixed;
+    top: 0;
+    font-size: 20px;
+    z-index: 1;
+    background-color: rgba(84, 73, 56, 0.5);
+}
+
+.innitials {
+    color: white;
+    line-height: 170%;
+    font-family: 'Great Vibes';
+}
+
+.primary_nav_btn {
+    /* border: 2px solid red; */
+}
+
+.menu_icon {
+    /* border: 2px solid red; */
+}
+.hero_section {
+    /* z-index: 0; */
+    /* height: 100dvh; */
+    position: relative;
+    /* border: 2px solid blue; */
+}
+
+.fade {
+    animation-name: fade_in;
+    animation-duration: 1s;
+    animation-timing-function:ease-in-out;
+}
+
+@keyframes fade_in {
+    from {
+        opacity: 0;
+        transform: translateY(9px);
+        }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+.slide {
+    height: 100dvh;
+    position: relative;
+    display: none;
+}
+
+.hero_content {
+    font-weight: 600;
+    width:100%;
+    padding: 2rem;
+    /* border: 2px solid red; */
+    position: absolute;
+    bottom:0;
+    color: var(--hero-text);
+    text-align: center;
+    opacity: 0;
+    animation-name: textUp;
+    animation-duration: 1s;
+    animation-delay: 0.5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes textUp {
+    from { 
+        opacity: 0;
+        transform: translateY(100px);}
+    to {
+        opacity: 1;
+        transform: translateY(0);}
+}
+
+
+
+.styleText3 {
+    bottom:20%;
+}
+
+
+
+.hero_text {
+  
+}
+
+.hero_image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 50% 20%;
+    opacity: 1;
+    /* filter:grayscale(100%); */
+}
+
+.next_button,.previous_button {
+    /* border: 2px solid red; */
+    position: absolute;
+    top: 50%;
+    z-index: 2;
+    color: white;
+    margin: 0 1rem 0;
+    padding: 0.5rem;
+    transform:scale(2,2);
+    /* opacity: 50%; */
+}
+
+.next_button:hover,.previous_button:hover {
+    background-color: rgb(80, 75, 75);
+    opacity: 50%;
+}
+
+.next_button{
+    right: 0;
+}
+.po {
+    color: wheat;
+    /* display: none; */
+    animation-name: left_to_rigth;
+    animation-duration: 4s;
+    position: relative;
+    animation-timing-function:ease;
+    animation-delay: 6s;
+    animation-fill-mode:backwards;
+}
+
+@keyframes left_to_right {
+    from {
+        left: -100%;
+    }
+    to {
+        left: 0;
+    }
+}
