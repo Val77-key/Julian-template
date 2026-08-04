@@ -1,6 +1,7 @@
 const slides = document.getElementsByClassName('slide');
 const nextButton = document.querySelector('.next_button');
 const previousButton = document.querySelector('.previous_button');
+const heroContents = document.querySelectorAll('.hero_content');
 let slideIndex = 0;
 
 
@@ -27,6 +28,13 @@ function showslides() {
     }
     for(let i = 0; i < slides.length; i ++) {
         slides[i].style.display = 'none';
+        heroContents[i].classList.remove('animate-text');
     }
     slides[slideIndex].style.display = 'block';
+
+    void heroContents[slideIndex].offsetWidth;
+
+
+    heroContents[slideIndex].classList.add('animate-text');
 };
+
