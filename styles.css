@@ -83,8 +83,6 @@ body {
     /* border: 2px solid red; */
 }
 .hero_section {
-    /* z-index: 0; */
-    /* height: 100dvh; */
     position: relative;
     /* border: 2px solid blue; */
 }
@@ -130,6 +128,14 @@ body {
     animation-fill-mode: forwards;
 }
 
+.active {
+    display: block;
+}
+
+.hidden {
+    display: none;
+}
+
 @keyframes textUp {
     from { 
         opacity: 0;
@@ -171,8 +177,8 @@ body {
 }
 
 .next_button:hover,.previous_button:hover {
-    background-color: rgb(80, 75, 75);
-    opacity: 50%;
+    background-color: black;
+    opacity: 40%;
 }
 
 .next_button{
