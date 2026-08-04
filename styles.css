@@ -120,14 +120,14 @@ body {
     bottom:0;
     color: var(--hero-text);
     text-align: center;
-    opacity: 0;
-    animation-name: textUp;
-    animation-duration: 1s;
-    animation-delay: 0.5s;
-    animation-fill-mode: forwards;
+    /* opacity: 0; */
+    /* animation-name: textUp; */
+    /* animation-duration: 1s; */
+    /* animation-delay: 0.5s; */
+    /* animation-fill-mode: forwards; */
 }
 
-@keyframes textUp {
+/* @keyframes textUp {
     from { 
         opacity: 0;
         transform: translateY(100px);}
@@ -135,7 +135,7 @@ body {
         opacity: 1;
         transform: translateY(0);}
 }
-
+ */
 
 
 .styleText3 {
