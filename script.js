@@ -2,39 +2,45 @@ const slides = document.getElementsByClassName('slide');
 const nextButton = document.querySelector('.next_button');
 const previousButton = document.querySelector('.previous_button');
 const heroContents = document.querySelectorAll('.hero_content');
-let slideIndex = 0;
+let slideIndex = 1;
 
 
-showslides(); // function declarations are hoisted. arrow functions and function expression are not
+showslides(slideIndex); // function declarations are hoisted. arrow functions and function expression are not
 
 
 nextButton.addEventListener('click', () => {
-    slideIndex ++;
-    showslides();
+    plusSlide(1);
 });
 
+function plusSlide(n) {
+    showslides(slideIndex += n)
+}
+
 previousButton.addEventListener('click', ()=> {
-    slideIndex --;
-    showslides();
-})
+    minusSlide(-1)
+});
+
+function minusSlide(n) {
+    showslides(slideIndex += n)
+}
 
 
-function showslides() {
-    if(slideIndex >= slides.length) {
-        slideIndex = 0
+function showslides(n) {
+    if(n > slides.length) {
+        slideIndex = 1
     }
-    if(slideIndex < 0) {
+    if(n < 1) {
         slideIndex = slides.length - 1;
     }
     for(let i = 0; i < slides.length; i ++) {
         slides[i].style.display = 'none';
-        heroContents[i].classList.remove('textUp_animation');
+        // heroContents[i].classList.remove('textUp_animation');
     }
-    slides[slideIndex].style.display = 'block';
+    slides[slideIndex-1].style.display = 'block';
 
-    void heroContents[slideIndex].offsetWidth;
+    // void heroContents[slideIndex].offsetWidth;
 
 
-    heroContents[slideIndex].classList.add('textUp_animation');
+    // heroContents[slideIndex-1].classList.add('textUp_animation');
 };
 

@@ -124,7 +124,7 @@ body {
 .textUp_animation{
     animation-name: textUp;
     animation-duration: 1s;
-    animation-delay: 0.5s;
+    animation-delay: 0.7s;
     animation-fill-mode: forwards;
 }
 
