@@ -89,13 +89,18 @@ body {
     /* border: 2px solid blue; */
 }
 
-.fade {
+
+
+.slide {
+    height: 100dvh;
+    position: relative;
+    display: none;
     animation-name: fade_in;
     animation-duration: 1s;
     animation-timing-function:ease-in-out;
 }
 
-@keyframes fade_in {
+@keyframes fade_in { 
     from {
         opacity: 0;
         transform: translateY(9px);
@@ -104,13 +109,6 @@ body {
         opacity: 1;
         transform: translateY(0);
     }
-}
-
-
-.slide {
-    height: 100dvh;
-    position: relative;
-    display: none;
 }
 
 .hero_content {
@@ -141,10 +139,8 @@ body {
 
 
 .styleText3 {
-    bottom:20%;
+    /* bottom:20%; */
 }
-
-
 
 .hero_text {
   
