@@ -37,17 +37,14 @@ function showslides(n) {
 
     for (let i = 0; i < slides.length; i++) {
         slides[i].style.display = "none";
-        // heroContents[i].classList.remove("textUp_animation");
+        heroContents[i].classList.remove("textUp_animation");
     }
 
     slides[current].style.display = "block";
 
-    // void heroContents[current].offsetWidth;
+    void heroContents[current].offsetWidth;
 
     heroContents[current].classList.add("textUp_animation");
-
-    // console.log(heroContents[current].offsetWidth);
-
 };
 
 
