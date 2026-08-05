@@ -32,15 +32,15 @@ function showslides(n) {
     if(n < 1) {
         slideIndex = slides.length;
     }
-    for(let i = 0; i < slides.length; i ++) {
-        slides[i].style.display = 'none';
-        // heroContents[i].classList.remove('textUp_animation');
+    for (let i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+        heroContents[i].classList.remove("textUp_animation");
     }
-    slides[slideIndex-1].style.display = 'block';
 
-    // void heroContents[slideIndex].offsetWidth;
+    slides[current].style.display = "block";
 
+    void heroContents[current].offsetWidth;
 
-    // heroContents[slideIndex-1].classList.add('textUp_animation');
+    heroContents[current].classList.add("textUp_animation");
 };
 
