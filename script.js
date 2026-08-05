@@ -32,6 +32,9 @@ function showslides(n) {
     if(n < 1) {
         slideIndex = slides.length;
     }
+
+    const current = slideIndex - 1;
+    
     for (let i = 0; i < slides.length; i++) {
         slides[i].style.display = "none";
         heroContents[i].classList.remove("textUp_animation");
