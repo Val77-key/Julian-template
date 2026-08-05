@@ -5,7 +5,7 @@ const heroContents = document.querySelectorAll('.hero_content');
 let slideIndex = 1;
 
 
-showslides(slideIndex); // function declarations are hoisted. arrow functions and function expression are not
+showslides(slideIndex); 
 
 
 nextButton.addEventListener('click', () => {
@@ -34,16 +34,20 @@ function showslides(n) {
     }
 
     const current = slideIndex - 1;
-    
+
     for (let i = 0; i < slides.length; i++) {
         slides[i].style.display = "none";
-        heroContents[i].classList.remove("textUp_animation");
+        // heroContents[i].classList.remove("textUp_animation");
     }
 
     slides[current].style.display = "block";
 
-    void heroContents[current].offsetWidth;
+    // void heroContents[current].offsetWidth;
 
     heroContents[current].classList.add("textUp_animation");
+
+    // console.log(heroContents[current].offsetWidth);
+
 };
+
 
