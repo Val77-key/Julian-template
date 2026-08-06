@@ -52,11 +52,11 @@ function showSlides(n) {
     const currentSlide = slideIndex - 1;
 
     for (let i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";
+        slides[i].classList.remove('active');
         heroContents[i].classList.remove("textUp_animation");
     }
 
-    slides[currentSlide].style.display = "block";
+    slides[currentSlide].classList.add('active');
 
     void heroContents[currentSlide].offsetWidth;
 
