@@ -2,49 +2,63 @@ const slides = document.getElementsByClassName('slide');
 const nextButton = document.querySelector('.next_button');
 const previousButton = document.querySelector('.previous_button');
 const heroContents = document.querySelectorAll('.hero_content');
+const AUTO_SLIDE_DELAY = 6000;
+let interval;
 let slideIndex = 1;
 
 
-showslides(slideIndex); 
-
+showSlides(slideIndex); 
+startAutoSlide();
 
 nextButton.addEventListener('click', () => {
-    plusSlide(1);
+    changeSlide(1);
+    resetAutoSlide();
 });
-
-function plusSlide(n) {
-    showslides(slideIndex += n)
-}
 
 previousButton.addEventListener('click', ()=> {
-    minusSlide(-1)
+    changeSlide(-1);
+    resetAutoSlide();
 });
 
-function minusSlide(n) {
-    showslides(slideIndex += n)
+
+function startAutoSlide() {
+    interval = setInterval(() => {
+    changeSlide(1);
+    },AUTO_SLIDE_DELAY);
 }
 
 
-function showslides(n) {
-    if(n > slides.length) {
-        slideIndex = 1
+function resetAutoSlide() {
+    clearInterval(interval);
+    startAutoSlide();  
+}
+
+
+function changeSlide(n) {
+    slideIndex += n;
+    showSlides(slideIndex);
+}
+
+function showSlides(n) {
+    const totalSlides = slides.length;
+
+    if(n > totalSlides) {
+        slideIndex = 1;
     }
-    if(n < 1) {
-        slideIndex = slides.length;
+    else if (n < 1) {
+        slideIndex = totalSlides;
     }
 
-    const current = slideIndex - 1;
+    const currentSlide = slideIndex - 1;
 
     for (let i = 0; i < slides.length; i++) {
         slides[i].style.display = "none";
         heroContents[i].classList.remove("textUp_animation");
     }
 
-    slides[current].style.display = "block";
+    slides[currentSlide].style.display = "block";
 
-    void heroContents[current].offsetWidth;
+    void heroContents[currentSlide].offsetWidth;
 
-    heroContents[current].classList.add("textUp_animation");
+    heroContents[currentSlide].classList.add("textUp_animation");
 };
-
-
