@@ -92,8 +92,7 @@ body {
 
 
 .slide {
-    min-height: 100dvh;
-    padding-bottom: env(safe-area-inset-bottom);
+    height: 105lvh;
     position: relative;
     display: none;
     animation-name: fade_in;
@@ -201,9 +200,6 @@ body {
     width: 45%;
 }
 
-.image4 {
-  height:100lvh;
-  }
 .po {
     /* display: none; */
     animation-name: left_to_rigth;
