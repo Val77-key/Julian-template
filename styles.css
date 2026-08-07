@@ -93,6 +93,7 @@ body {
 
 .slide {
     min-height: 100dvh;
+    padding-bottom: env(safe-area-inset-bottom);
     position: relative;
     display: none;
     animation-name: fade_in;
