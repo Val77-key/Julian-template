@@ -92,7 +92,7 @@ body {
 
 
 .slide {
-    height: 110lvh;
+    height: 107lvh;
     position: relative;
     display: none;
     animation-name: fade_in;
