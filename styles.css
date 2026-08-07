@@ -28,6 +28,7 @@
 
 :root { /*colors*/
     --hero-text: #FFFFFF;
+    --background-color: #aeaca7;
 
   }
 
@@ -51,7 +52,7 @@ button {
 
 
 body {
-    background-color: var(--hero-text);
+    background-color: var(--background-color);
     font-family: 'Edu VIC WA NT Hand';
     font-style: normal;
     font-size: 17px;
@@ -83,6 +84,7 @@ body {
     /* border: 2px solid red; */
 }
 .hero_section {
+    background-color: #FFFFFF;
     position: relative;
     /* border: 2px solid blue; */
 }
@@ -188,8 +190,16 @@ body {
 .next_button{
     right: 0;
 }
+
+.main {
+    /* border: 2px solid red; */
+    padding: 0 1.5rem 0;
+}
+.line {
+    border-bottom: 1px solid var(--hero-text);
+    width: 45%;
+}
 .po {
-    color: wheat;
     /* display: none; */
     animation-name: left_to_rigth;
     animation-duration: 4s;
