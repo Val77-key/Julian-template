@@ -7,10 +7,10 @@ let interval;
 let slideIndex = 1;
 
 
-showSlides(slideIndex); 
+showSlides(slideIndex);
 startAutoSlide();
 
-nextButton.addEventListener('click', () => {
+nextButton.addEventListener('click', ()=> {
     changeSlide(1);
     resetAutoSlide();
 });
@@ -30,7 +30,7 @@ function startAutoSlide() {
 
 function resetAutoSlide() {
     clearInterval(interval);
-    startAutoSlide();  
+    startAutoSlide();
 }
 
 
@@ -62,3 +62,25 @@ function showSlides(n) {
 
     heroContents[currentSlide].classList.add("textUp_animation");
 };
+
+const openBtn = document.querySelector('.open_btn');
+const mobileNav = document.querySelector('.nav_mobile');
+const closeBtn = document.querySelector('.close_btn');
+
+
+function openMobileNav() {
+    mobileNav.classList.add('open');
+}
+
+function closeMobileNav() {
+    mobileNav.classList.remove('open');
+}
+
+
+openBtn.addEventListener('click', () => {
+    openMobileNav();
+});
+
+closeBtn.addEventListener('click', () => {
+    closeMobileNav();
+});

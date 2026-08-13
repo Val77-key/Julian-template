@@ -8,10 +8,30 @@
     <script src="script.js" defer></script>
 </head>
 <body>
-    <div class="primary_navigation_fixed">
-        <p class="innitials">VK</p>
-        <button type="button" class="primary_nav_btn"><img src="assets/images/nav_image.svg" width="24" height="24" alt="menu" class="menu_icon"></button>
-    </div>
+    <nav>
+        <div class="top_fixed_bar" aria-label="Primary navigation">
+            <span class="initials">VK</span>
+            <button type="button" class="open_btn" aria-label="Open menu">
+                <div class="open_hamb"></div>
+                <div class="open_hamb"></div>
+                <div class="open_hamb"></div>
+            </button>
+        </div>
+        <div class="nav_mobile" aria-label="Mobile navigation">
+            <ul class="ul_mobile">
+                <li class="li_mobile"><a href="#" class="link">HOME</a></li>
+                <li class="li_mobile"><a href="#" class="link">BIO</a></li>
+                <li class="li_mobile"><a href="#" class="link">MEDIA GALLERY</a></li>
+                <li class="li_mobile"><a href="#" class="link">PHOTO GALLERY</a></li>
+                <li class="li_mobile"><a href="#" class="link">REVIEWS</a></li>
+                <li class="li_mobile"><a href="#" class="link">CONTACT</a></li>
+            </ul>
+            <button type="button" class="close_btn" aria-label="Close menu">
+                <div class="cls_hamb one"></div>
+                <div class="cls_hamb two"></div>
+            </button>
+        </div>
+    </nav>
     <header class="hero_section">
         <div class="slide active">
             <div class="hero_content textUp_animation">
@@ -20,7 +40,7 @@
                 <p class="hero_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores corrupti unde veniam. Perspiciatis sit recusandae nisi maxime cumque quos accusamus id ipsum doloribus perferendis, fuga adipisci sint. Perspiciatis, exercitationem atque?</p>
             </div>
             <img src="assets/images_me/smile_me.webp" width="1900" height="2850" alt="ValSmile" class="hero_image">
-        </div>  
+        </div>
         <div class="slide active">
             <div class="hero_content textUp_animation">
                 <h2 class="hero_heading">lorem2</h2>
@@ -40,6 +60,7 @@
         <button type="button" class="next_button">&#10095;</button>
         <button type="button" class="previous_button">&#10094;</button>
     </header>
+
     <img src="assets/images_me/classic_me.jpg" width="" height="" alt="ValClassic" class="image4">
     <br>
     <br>
