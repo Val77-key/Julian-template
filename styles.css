@@ -97,8 +97,8 @@ body {
 
 
 .nav_mobile {
-    /* transform: translateX(200%); */
-    /* transition: transform 0.5s ease; */
+    transform: translateX(200%);
+    transition: transform 0.5s ease;
     /* display: none; */
     position: fixed;
     inset: 0;
