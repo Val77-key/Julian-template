@@ -1,3 +1,4 @@
+// Hero slider functionality
 const slides = document.getElementsByClassName('slide');
 const nextButton = document.querySelector('.next_button');
 const previousButton = document.querySelector('.previous_button');
@@ -63,6 +64,10 @@ function showSlides(n) {
     heroContents[currentSlide].classList.add("textUp_animation");
 };
 
+
+
+
+// Mobile navigation functionality
 const openBtn = document.querySelector('.open_btn');
 const mobileNav = document.querySelector('.nav_mobile');
 const closeBtn = document.querySelector('.close_btn');
@@ -88,16 +93,20 @@ closeBtn.addEventListener('click', () => {
 
 
 
+// Mobile navigation links functionality
 const mobileNavLinks = document.querySelectorAll('.nav__mobile__link');
 
 mobileNavLinks.forEach(link => { // Add click event listener to each link
     link.addEventListener('click', () => {
         mobileNavLinks.forEach(item => item.classList.remove('active'));// Remove 'active' class from all links
         link.classList.add('active');
+        closeMobileNav(); // Close the mobile navigation menu after clicking a link
     });
 });
 
 
+
+// Desktop navigation links functionality
 const desktopNavLinks = document.querySelectorAll('.nav__desktop__link');
 
 desktopNavLinks.forEach(link => { // Add click event listener to each link
@@ -105,4 +114,24 @@ desktopNavLinks.forEach(link => { // Add click event listener to each link
         desktopNavLinks.forEach(item => item.classList.remove('active'));// Remove 'active' class from all links
         link.classList.add('active');
     });
+});
+
+
+
+
+// Back to top button functionality
+const toTopBtn = document.getElementById("toTopBtn");
+
+window.addEventListener("scroll", () => {
+    if (window.scrollY > 300) {
+        toTopBtn.classList.add("active");
+    } else {
+        toTopBtn.classList.remove("active");
+    }
+});
+
+
+toTopBtn.addEventListener("click", () => {
+    // window.document.documentElement.scrollTop = 0;
+    window.scrollTo({ top: 0, behavior: "smooth" });
 });

@@ -28,10 +28,16 @@
 
 :root { /*colors*/
     --white: #FFFFFF;
-    --background-color: #aeaca7;
+    --body--background-color: #ffffff;
     --mobile-nav-background: linear-gradient(to right, rgba(242, 161, 161, 0.8), rgba(117, 130, 213, 0.8)), url('assets/images_me/classic_me.jpg');
     --active-link-color: rgb(164, 81, 33);
     --link-background-color: rgba(255, 255, 255, 0.18);
+    --link-hover-background-color: rgba(255, 255, 255, 0.12);
+    --border-color: rgba(255, 255, 255, 0.28);
+    --to-top-button-background-color: rgba(0, 0, 0, 0.5);
+    --to-top-button-hover-background-color: rgba(0, 0, 0, 0.7);
+    --top-fixed-bar-background-color: rgba(0, 0, 0, 0.5);
+
 
   }
 
@@ -53,13 +59,39 @@ button {
     cursor: pointer;
 }
 
+html {
+    scroll-behavior:smooth;
+}
 
 body {
-    background-color: var(--background-color);
+    background-color: var(--body--background-color);
     font-family: 'Edu VIC WA NT Hand';
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
+}
+
+#toTopBtn {
+    display: none;
+    position: fixed;
+    bottom: 1.2rem;
+    right: 1.2rem;
+    padding: 0.5em 1em;
+    background-color: var(--to-top-button-background-color);
+    color: var(--white);
+    border: none;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    z-index: 3;
+}
+
+#toTopBtn:hover {
+    background-color: var(--to-top-button-hover-background-color);
+}
+
+#toTopBtn.active {
+    display: block;
 }
 
 .top_fixed_bar {
@@ -70,7 +102,7 @@ body {
     top: 0;
     padding: 0.75rem 1rem;
     z-index: 1;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: var(--top-fixed-bar-background-color);
     /* border:2px solid red; */
 }
 
@@ -105,8 +137,7 @@ body {
     transition: transform 0.5s ease;
     position: fixed;
     inset: 0;
-    height: 110dvh;
-    z-index: 3;
+    z-index: 4;
     background-image: var(--mobile-nav-background);
     background-repeat: no-repeat;
     background-position:center;
@@ -119,7 +150,7 @@ body {
 
 .nav__mobile__list {
     width: 100%;
-    height: 100%;
+    min-height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -174,7 +205,7 @@ background: var(--link-background-color);
     position: absolute;
     width: 24px;
     height: 2px;
-    background-color: white;
+    background-color: var(--white);
     border-radius: 999px;
 }
 
@@ -200,7 +231,7 @@ background: var(--link-background-color);
 }
 
 .slide {
-    height: 107dvh;
+    height: 100dvh;
     position: relative;
     display: none;
     animation-name: fade_in;
