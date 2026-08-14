@@ -11,6 +11,14 @@
     <nav>
         <div class="top_fixed_bar" aria-label="Primary navigation">
             <span class="initials">VK</span>
+             <ul class="nav__desktop">
+                <li><a href="#home" class="nav__desktop__link active">HOME</a></li>
+                <li><a href="#bio" class="nav__desktop__link">BIO</a></li>
+                <li><a href="#media-gallery" class="nav__desktop__link">MEDIA GALLERY</a></li>
+                <li><a href="#photo-gallery" class="nav__desktop__link">PHOTO GALLERY</a></li>
+                <li><a href="#reviews" class="nav__desktop__link">REVIEWS</a></li>
+                <li><a href="#contact" class="nav__desktop__link">CONTACT</a></li>
+            </ul>
             <button type="button" class="open_btn" aria-label="Open menu">
                 <div class="open_hamb"></div>
                 <div class="open_hamb"></div>
@@ -18,13 +26,13 @@
             </button>
         </div>
         <div class="nav_mobile" aria-label="Mobile navigation">
-            <ul class="ul_mobile">
-                <li><a href="#" class="link active">HOME</a></li>
-                <li><a href="#" class="link">BIO</a></li>
-                <li><a href="#" class="link">MEDIA GALLERY</a></li>
-                <li><a href="#" class="link">PHOTO GALLERY</a></li>
-                <li><a href="#" class="link">REVIEWS</a></li>
-                <li><a href="#" class="link">CONTACT</a></li>
+            <ul class="nav__mobile__list">
+                <li><a href="#home" class="nav__mobile__link active">HOME</a></li>
+                <li><a href="#bio" class="nav__mobile__link">BIO</a></li>
+                <li><a href="#media-gallery" class="nav__mobile__link">MEDIA GALLERY</a></li>
+                <li><a href="#photo-gallery" class="nav__mobile__link">PHOTO GALLERY</a></li>
+                <li><a href="#reviews" class="nav__mobile__link">REVIEWS</a></li>
+                <li><a href="#contact" class="nav__mobile__link">CONTACT</a></li>
             </ul>
             <button type="button" class="close_btn" aria-label="Close menu">
                 <div class="cls_hamb one"></div>
@@ -32,7 +40,7 @@
             </button>
         </div>
     </nav>
-    <header class="hero_section">
+    <header class="hero_section" id="home">
         <div class="slide active">
             <div class="hero_content textUp_animation">
                 <h2 class="hero_heading">lorem1</h2>
@@ -60,24 +68,58 @@
         <button type="button" class="next_button">&#10095;</button>
         <button type="button" class="previous_button">&#10094;</button>
     </header>
-
-    <img src="assets/images_me/classic_me.jpg" width="" height="" alt="ValClassic" class="image4">
-    <br>
-    <br>
-    <br>
-    <main class="main">
-        <div class="line"></div>
-        <br>
-        <div class="bio">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta sunt facere at ipsum fuga rem voluptate! Veniam soluta mollitia in assumenda aperiam tempore, quod laborum provident. Placeat eaque eveniet perspiciatis.</p>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore nisi assumenda, et nobis, ea eum ipsa distinctio sunt temporibus magnam illum voluptate obcaecati! Sit sunt magni laudantium quam, odit doloremque.</p>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum doloribus harum id. Ullam animi, veritatis vero commodi deserunt odit sunt dolorem dolore provident tempore doloremque porro eligendi ab quas enim?</p>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iure corporis porro natus deserunt veritatis, quisquam quis maxime inventore earum neque quam magni temporibus? Necessitatibus, veritatis similique possimus doloribus sunt fugiat!</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa dolore voluptatibus enim dicta corporis vitae nulla? Ex, ut, modi deserunt a, tenetur voluptate iusto molestias corporis mollitia officiis saepe assumenda.</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit cumque quia dolorem rerum distinctio nihil, numquam rem, illo laboriosam quos reiciendis nulla, quod consectetur architecto excepturi ducimus expedita facere incidunt.</p>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut modi sapiente maiores, quae tenetur mollitia iste voluptate. Deserunt consequuntur aspernatur voluptatum! Illum consectetur eos corporis amet tenetur dolore. Explicabo, praesentium?
-            </p>
-        </div>
+    <main>
+        <section class="section1" id="bio" aria-label="About me section">
+            <div class="section1_content">
+                <h2 class="section1_heading">BIO Lorem ipsum dolor sit amet consectetur adipisicing elit.</h2>
+                <p class="section1_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.</p>
+                <p class="section1_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.</p>
+                <img src="assets/images_me/classic_me.jpg" width="" height="" alt="ValClassic" class="image4">
+            </div>
+        </section>
+        <section class="section2" id="photo-gallery" aria-label="photo gallery section">
+            <div class="section2_content">
+                <h2 class="section2_heading"> PHOTO GALLERY Lorem ipsum dolor sit amet consectetur adipisicing elit.</h2>
+                <p class="section2_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.</p>
+                <p class="section2_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.</p>
+            </div>
+            <img src="assets/images_me/classic_me.jpg" width="" height="" alt="ValClassic" class="image4">
+        </section>
+        <section class="section3" id="media-gallery" aria-label="media gallery section">
+            <div class="section3_content">
+                <h2 class="section3_heading">MEDIA GALLERY Lorem ipsum dolor sit amet consectetur adipisicing elit.</h2>
+                <p class="section3_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.</p>
+                <p class="section3_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.</p>
+            </div>
+            <img src="assets/images_me/classic_me.jpg" width="" height="" alt="ValClassic" class="image4">
+        </section>
+        <section class="section4" aria-label="reviews section" id="reviews">
+            <div class="section4_content">
+                <h2 class="section4_heading">REVIEWS Lorem ipsum dolor sit amet consectetur adipisicing elit.</h2>
+                <p class="section4_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.</p>
+                <p class="section4_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.</p>
+            </div>
+            <img src="assets/images_me/classic_me.jpg" width="" height="" alt="ValClassic" class="image4">
+        </section>
+        <section class="section5" aria-label="contact section">
+            <div class="section5_content">
+                <h2 class="section5_heading">CONTACT Lorem ipsum dolor sit amet consectetur adipisicing elit.</h2>
+                <p class="section5_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.</p>
+                <p class="section5_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.</p>
+            </div>
+            <img src="assets/images_me/classic_me.jpg" width="" height="" alt="ValClassic" class="image4">
+              <div class="line"></div>
+            <div class="bio">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta sunt facere at ipsum fuga rem voluptate! Veniam soluta mollitia in assumenda aperiam tempore, quod laborum provident. Placeat eaque eveniet perspiciatis.</p>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore nisi assumenda, et nobis, ea eum ipsa distinctio sunt temporibus magnam illum voluptate obcaecati! Sit sunt magni laudantium quam, odit doloremque.</p>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum doloribus harum id. Ullam animi, veritatis vero commodi deserunt odit sunt dolorem dolore provident tempore doloremque porro eligendi ab quas enim?</p>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iure corporis porro natus deserunt veritatis, quisquam quis maxime inventore earum neque quam magni temporibus? Necessitatibus, veritatis similique possimus doloribus sunt fugiat!</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa dolore voluptatibus enim dicta corporis vitae nulla? Ex, ut, modi deserunt a, tenetur voluptate iusto molestias corporis mollitia officiis saepe assumenda.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit cumque quia dolorem rerum distinctio nihil, numquam rem, illo laboriosam quos reiciendis nulla, quod consectetur architecto excepturi ducimus expedita facere incidunt.</p>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut modi sapiente maiores, quae tenetur mollitia iste voluptate. Deserunt consequuntur aspernatur voluptatum! Illum consectetur eos corporis amet tenetur dolore. Explicabo, praesentium?
+                </p>
+            </div>
+        </section>
     </main>
 </body>
 </html>

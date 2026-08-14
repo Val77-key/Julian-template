@@ -88,11 +88,21 @@ closeBtn.addEventListener('click', () => {
 
 
 
-const navLinks = document.querySelectorAll('.link');
+const mobileNavLinks = document.querySelectorAll('.nav__mobile__link');
 
-navLinks.forEach(link => {
+mobileNavLinks.forEach(link => { // Add click event listener to each link
     link.addEventListener('click', () => {
-        navLinks.forEach(item => item.classList.remove('active'));
+        mobileNavLinks.forEach(item => item.classList.remove('active'));// Remove 'active' class from all links
+        link.classList.add('active');
+    });
+});
+
+
+const desktopNavLinks = document.querySelectorAll('.nav__desktop__link');
+
+desktopNavLinks.forEach(link => { // Add click event listener to each link
+    link.addEventListener('click', () => {
+        desktopNavLinks.forEach(item => item.classList.remove('active'));// Remove 'active' class from all links
         link.classList.add('active');
     });
 });
