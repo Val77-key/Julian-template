@@ -37,6 +37,7 @@
     --to-top-button-background-color: rgba(0, 0, 0, 0.5);
     --to-top-button-hover-background-color: rgba(0, 0, 0, 0.7);
     --top-fixed-bar-background-color: rgba(0, 0, 0, 0.5);
+    /* --UI-background-color: rgb(6, 6, 6); */
 
 
   }
@@ -61,10 +62,11 @@ button {
 
 html {
     scroll-behavior:smooth;
+    /* background-color: var(--body--background-color); */
 }
 
 body {
-    background-color: var(--body--background-color);
+    /* background-color: var(--body--background-color); */
     font-family: 'Edu VIC WA NT Hand';
     font-style: normal;
     font-weight: 400;
@@ -92,6 +94,14 @@ body {
 
 #toTopBtn.active {
     display: block;
+}
+
+.colorUI {
+    width: 100%;
+    position: fixed;
+    top: -1px;
+    z-index: 5;
+    background-color: var(--UI-background-color);
 }
 
 .top_fixed_bar {
