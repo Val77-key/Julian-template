@@ -1,5 +1,5 @@
 // Hero slider functionality (guarded so pages without a slider won't throw)
-const slides = document.getElementsByClassName('slide');
+const slides = document.querySelectorAll('.slide');
 if (slides.length) {
     const nextButton = document.querySelector('.next_button');
     const previousButton = document.querySelector('.previous_button');
@@ -96,9 +96,9 @@ if (closeBtn) {
 
 
 
-// Mobile navigation links functionality (guarded)
+// Mobile navigation links functionality
 const mobileNavLinks = document.querySelectorAll('.nav__mobile__link');
-if (mobileNavLinks.length) {
+
     mobileNavLinks.forEach(link => { // Add click event listener to each link
         link.addEventListener('click', () => {
             mobileNavLinks.forEach(item => item.classList.remove('active'));// Remove 'active' class from all links
@@ -106,21 +106,17 @@ if (mobileNavLinks.length) {
             closeMobileNav(); // Close the mobile navigation menu after clicking a link
         });
     });
-}
 
 
 
-// Desktop navigation links functionality (guarded)
+// Desktop navigation links functionality
 const desktopNavLinks = document.querySelectorAll('.nav__desktop__link');
-if (desktopNavLinks.length) {
     desktopNavLinks.forEach(link => { // Add click event listener to each link
         link.addEventListener('click', () => {
             desktopNavLinks.forEach(item => item.classList.remove('active'));// Remove 'active' class from all links
             link.classList.add('active');
         });
     });
-}
-
 
 
 

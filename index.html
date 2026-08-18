@@ -4,20 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="theme-color" content="#ffffff">
-    <title>Template Julian</title>
+    <title>Larysa Robinson | Piano Teacher & Music Educator </title>
+    <link rel="icon" type="image/png" href="favicon.png">
     <link rel="stylesheet" href="styles.css">
     <script src="script.js" defer></script>
 </head>
 <body>
-    <div id="colorUI" class="colorUI"></div>
     <nav>
         <div class="top_fixed_bar" aria-label="Primary navigation">
-            <span class="initials">LR</span>
+            <a href="#home" class="initials">LR</a>
              <ul class="nav__desktop">
                 <li><a href="#home" class="nav__desktop__link active">HOME</a></li>
                 <li><a href="#bio" class="nav__desktop__link">BIO</a></li>
                 <li><a href="#media-gallery" class="nav__desktop__link">MEDIA GALLERY</a></li>
-                <li><a href="photo_gallery.html" class="nav__desktop__link">PHOTO GALLERY</a></li>
+                <li><a href="#photo-gallery" class="nav__desktop__link">PHOTO GALLERY</a></li>
                 <li><a href="#reviews" class="nav__desktop__link">REVIEWS</a></li>
                 <li><a href="#contact" class="nav__desktop__link">CONTACT</a></li>
             </ul>
@@ -32,7 +32,7 @@
                 <li><a href="#home" class="nav__mobile__link active">HOME</a></li>
                 <li><a href="#bio" class="nav__mobile__link">BIO</a></li>
                 <li><a href="#media-gallery" class="nav__mobile__link">MEDIA GALLERY</a></li>
-                <li><a href="photo_gallery.html" class="nav__mobile__link">PHOTO GALLERY</a></li>
+                <li><a href="#photo-gallery" class="nav__mobile__link">PHOTO GALLERY</a></li>
                 <li><a href="#reviews" class="nav__mobile__link">REVIEWS</a></li>
                 <li><a href="#contact" class="nav__mobile__link">CONTACT</a></li>
             </ul>
@@ -103,25 +103,38 @@
             </div>
             <img src="assets/images_mom/top7.webp" width="" height="" alt="ValClassic" class="image4">
         </section>
-        <section class="section5" aria-label="contact section" id="contact">
-            <div class="section5_content">
-                <h2 class="section5_heading">CONTACT Lorem ipsum dolor sit amet consectetur adipisicing elit.</h2>
-                <p class="section5_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.</p>
-                <p class="section5_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.</p>
+        <footer class="contact-section" aria-label="contact section" id="contact">
+            <h2 class="contact__heading">CONTACT</h2>
+            <div class="contact__content--flex">
+                <div class="contact__content__flex-item1">
+                    <div class="tel-email">
+                        <p class="tel-number">Tel.: <a href="tel:+16618608170" class="tel-number-link">+1 (661) 860-8170</a></p>
+                        <p class="e-mail">Mail: <a href="mailto:larysarobinson@gmail.com" class="e-mail-link">larysarobinson@gmail.com</a></p>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://www.instagram.com/larisakisilenko?igsh=NTc4MTIwNjQ2YQ%3D%3D"><img src="assets/images/instagram.svg" width="32" height="32" aria-label="Instagram"alt="inst"></a>
+                        <a href="https://www.facebook.com/share/1HHxJAsBbd/?mibextid=wwXIfr"><img src="assets/images/facebook.svg" width="32" height="32" fill="white" aria-label="Facebook" alt="Facebook"></a>
+                        <a href="https://youtube.com/@larysarobinson?si=365PJ92lu2iPZtXP"><img src="assets/images/youtube.svg" width="32" height="32" alt="YouTube" aria-label="YouTube"></a>
+                    </div>
+                </div>
+                <form action="" method="post" class="contact__form">
+                    <div class="form-group">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required><br>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required><br>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message" required></textarea><br>
+                    </div>
+                    <button type="submit" class="submit-btn">Send message</button>
+                </form>
             </div>
-            <img src="assets/images_mom/top6.webp" width="" height="" alt="ValClassic" class="image4">
-              <div class="line"></div>
-            <div class="bio">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta sunt facere at ipsum fuga rem voluptate! Veniam soluta mollitia in assumenda aperiam tempore, quod laborum provident. Placeat eaque eveniet perspiciatis.</p>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore nisi assumenda, et nobis, ea eum ipsa distinctio sunt temporibus magnam illum voluptate obcaecati! Sit sunt magni laudantium quam, odit doloremque.</p>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum doloribus harum id. Ullam animi, veritatis vero commodi deserunt odit sunt dolorem dolore provident tempore doloremque porro eligendi ab quas enim?</p>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iure corporis porro natus deserunt veritatis, quisquam quis maxime inventore earum neque quam magni temporibus? Necessitatibus, veritatis similique possimus doloribus sunt fugiat!</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa dolore voluptatibus enim dicta corporis vitae nulla? Ex, ut, modi deserunt a, tenetur voluptate iusto molestias corporis mollitia officiis saepe assumenda.</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit cumque quia dolorem rerum distinctio nihil, numquam rem, illo laboriosam quos reiciendis nulla, quod consectetur architecto excepturi ducimus expedita facere incidunt.</p>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut modi sapiente maiores, quae tenetur mollitia iste voluptate. Deserunt consequuntur aspernatur voluptatum! Illum consectetur eos corporis amet tenetur dolore. Explicabo, praesentium?
-                </p>
-            </div>
-        </section>
+            <p class="copyright">© 2026 Larysa Robinson. All rights reserved.</p>
+        </footer>
          <button id="toTopBtn" type="button" aria-label="Back to top">↑</button>
     </main>
 </body>
