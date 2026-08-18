@@ -265,7 +265,7 @@ background: var(--link-background-color);
 }
 
 .slide {
-    height: 100dvh;
+    height: 115dvh;
     position: relative;
     display: none;
     animation-name: fade_in;
@@ -292,12 +292,13 @@ background: var(--link-background-color);
     font-weight: 600;
     width:100%;
     padding: 2rem;
-    /* border: 2px solid red; */
+    border: 2px solid red;
     position: absolute;
     bottom:0;
     color: var(--white);
     text-align: center;
     opacity: 0;
+    margin-bottom: 7em;
 }
 
 .textUp_animation{
