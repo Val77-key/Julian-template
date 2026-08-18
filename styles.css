@@ -31,7 +31,7 @@
 
 :root { /*colors*/
     --white: #FFFFFF;
-    --body--background-color: rgba(243, 192, 111, 0.846);
+    --body--background-color: rgb(171, 147, 106);
     --mobile-nav-background: linear-gradient(to right, rgba(242, 161, 161, 0.8), rgba(117, 130, 213, 0.8)), url('assets/images_mom/top6.webp');
     --active-link-color: rgb(164, 81, 33);
     --link-background-color: rgba(255, 255, 255, 0.18);
@@ -148,6 +148,7 @@ body {
     display: grid;
     gap: 0.35rem;
     background: transparent;
+    /* z-index: 10; */
 }
 
 .open_hamb {
@@ -161,16 +162,17 @@ body {
     transform: translateX(200%);
     transition: transform 0.5s ease;
     position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 110dvh;
-    /* inset: 0; */
+    /* top: 0; */
+    /* left: 0; */
+    /* width: 100%; */
+    /* height: 110dvh; */
+    inset: 0;
     z-index: 4;
-    background-image: var(--mobile-nav-background);
-    background-repeat: no-repeat;
-    background-position:center;
-    background-size: cover;
+    background-color: var(--body--background-color);
+    /* background-image: var(--mobile-nav-background); */
+    /* background-repeat: no-repeat; */
+    /* background-position:center; */
+    /* background-size: cover; */
     /* border: 2px solid red; */
 }
 
@@ -220,21 +222,23 @@ background: var(--link-background-color);
 
 .close_btn {
     position: absolute;
+    /* font-size: 18psx; */
     top: 1rem;
     right: 1rem;
-    width: 30px;
-    height: 30px;
+    width: 35px;
+    height: 35px;
     padding: 0;
     background: none;
     cursor: pointer;
     display: grid;
     place-items: center;
+    /* border: 1px solid red; */
 }
 
 .cls_hamb {
     position: absolute;
-    width: 24px;
-    height: 2px;
+    width: 35px;
+    height: 3px;
     background-color: var(--white);
     border-radius: 999px;
 }
@@ -261,7 +265,7 @@ background: var(--link-background-color);
 }
 
 .slide {
-    height: 110dvh;
+    height: 100dvh;
     position: relative;
     display: none;
     animation-name: fade_in;
@@ -294,7 +298,6 @@ background: var(--link-background-color);
     color: var(--white);
     text-align: center;
     opacity: 0;
-    margin-bottom: 4rem;
 }
 
 .textUp_animation{
