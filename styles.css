@@ -596,6 +596,9 @@ background: var(--link-background-color);
     transition: opacity 0.3s ease;
 }
 
+.gallery__image-wrapper:hover::after {
+    opacity: 1;
+}
 
 
 .gallery-image {
@@ -636,9 +639,6 @@ background: var(--link-background-color);
         color: var(--footer-gold);
         }
 
-        .gallery__image-wrapper:hover::after {
-            opacity: 1;
-        }
 
     }
 
