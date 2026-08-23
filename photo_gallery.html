@@ -8,20 +8,20 @@
   <link rel="stylesheet" href="styles.css">
   <script src="script.js" defer></script>
 </head>
-<body class="gallery-body">
+<body class="gallery__body">
     <header>
         <nav>
-            <div class="top_fixed_bar" aria-label="Primary navigation">
+            <div class="top-fixed-bar" aria-label="Primary navigation">
                 <a href="index.html" class="initials">LR</a>
                 <ul class="nav__desktop">
                     <li><a href="index.html" class="nav__desktop__link active">HOME</a></li>
-                    <li><a href="index.html#bio" class="nav__desktop__link">BIO</a></li>
-                    <li><a href="index.html#media-gallery" class="nav__desktop__link">MEDIA GALLERY</a></li>
-                    <li><a href="photo_gallery.html" class="nav__desktop__link">PHOTO GALLERY</a></li>
-                    <li><a href="index.html#reviews" class="nav__desktop__link">REVIEWS</a></li>
+                    <li><a href="index.html#bio" class="nav__desktop__link">ABOUT</a></li>
+                    <li><a href="index.html#media-gallery" class="nav__desktop__link">SERVICES/LESSONS</a></li>
+                    <li><a href="photo_gallery.html" class="nav__desktop__link">GALLERY</a></li>
+                    <li><a href="index.html#reviews" class="nav__desktop__link">TESTIMONIALS</a></li>
                     <li><a href="index.html#contact" class="nav__desktop__link">CONTACT</a></li>
                 </ul>
-                <button type="button" class="open_btn" aria-label="Open menu">
+                <button type="button" class="open-nav-button" aria-label="Open menu">
                     <div class="open_hamb"></div>
                     <div class="open_hamb"></div>
                     <div class="open_hamb"></div>
@@ -30,89 +30,241 @@
             <div class="nav_mobile" aria-label="Mobile navigation">
                 <ul class="nav__mobile__list">
                     <li><a href="index.html" class="nav__mobile__link active">HOME</a></li>
-                    <li><a href="index.html#bio" class="nav__mobile__link">BIO</a></li>
-                    <li><a href="index.html#media-gallery" class="nav__mobile__link">MEDIA GALLERY</a></li>
-                    <li><a href="photo_gallery.html" class="nav__mobile__link">PHOTO GALLERY</a></li>
-                    <li><a href="index.html#reviews" class="nav__mobile__link">REVIEWS</a></li>
+                    <li><a href="index.html#bio" class="nav__mobile__link">ABOUT</a></li>
+                    <li><a href="index.html#media-gallery" class="nav__mobile__link">SERVICES/LESSONS</a></li>
+                    <li><a href="photo_gallery.html" class="nav__mobile__link">GALLERY</a></li>
+                    <li><a href="index.html#reviews" class="nav__mobile__link">TESTIMONIALS</a></li>
                     <li><a href="index.html#contact" class="nav__mobile__link">CONTACT</a></li>
                 </ul>
-                <button type="button" class="close_btn" aria-label="Close menu">
+                <button type="button" class="close-nav-btn" aria-label="Close menu">
                     <div class="cls_hamb one"></div>
                     <div class="cls_hamb two"></div>
                 </button>
             </div>
         </nav>
     </header>
-    <h1 class="gallery__main-heading">GALLERY</h1>
-    <div class="gallery">
+    <main>
+        <h1 class="gallery__main-heading">GALLERY</h1>
+        <div class="gallery">
 
-        <div class="gallery__image-wrapper">
-            <img src="assets/images_mom/1.jpg" width="" height="" alt="Photo 1" class="gallery-image">
+            <div class="gallery__image-wrapper">
+                <button type="button" class="gallery__img-btn">
+                <img src="assets/images_mom/1.jpg" width="" height="" alt="Photo 1" class="gallery__image" id="img1">
+            </button>
+            </div>
+
+            <div class="gallery__image-wrapper">
+                <button type="button" class="gallery__img-btn">
+                    <img src="assets/images_mom/2.jpg" width="" height="" alt="Photo 2" class="gallery__image" id="img2">
+                </button>
+            </div>
+
+            <div class="gallery__image-wrapper">
+                <button type="button" class="gallery__img-btn">
+                    <img src="assets/images_mom/3.jpg" width="" height="" alt="Photo 3" class="gallery__image" id="img3">
+                </button>
+            </div>
+
+            <div class="gallery__image-wrapper">
+                <button type="button" class="gallery__img-btn">
+                    <img src="assets/images_mom/4.jpg" width="" height="" alt="Photo 4" class="gallery__image" id="img4">
+                </button>
+            </div>
+
+            <div class="gallery__image-wrapper">
+                <button type="button" class="gallery__img-btn">
+                    <img src="assets/images_mom/5.jpg" width="" height="" alt="Photo 5" class="gallery__image" id="img5">
+                </button>
+            </div>
+
+            <div class="gallery__image-wrapper">
+                <button type="button" class="gallery__img-btn">
+                    <img src="assets/images_mom/6.jpg" width="" height="" alt="Photo 6" class="gallery__image" id="img6">
+                </button>
+            </div>
+
+            <div class="gallery__image-wrapper">
+                <button type="button" class="gallery__img-btn">
+                    <img src="assets/images_mom/7.jpg" width="" height="" alt="Photo 7" class="gallery__image" id="img7">
+                </button>
+            </div>
+
+            <div class="gallery__image-wrapper">
+                <button type="button" class="gallery__img-btn">
+                    <img src="assets/images_mom/8.jpg"width="" height=""  alt="Photo 8" class="gallery__image" id="img8">
+                </button>
+            </div>
+
+            <div class="gallery__image-wrapper">
+                <button type="button" class="gallery__img-btn">
+                    <img src="assets/images_mom/9.jpg" width="" height="" alt="Photo 9" class="gallery__image" id="img9">
+                </button>
+            </div>
+
+            <div class="gallery__image-wrapper">
+                <button type="button" class="gallery__img-btn">
+                    <img src="assets/images_mom/10.jpg"width="" height=""  alt="Photo 10" class="gallery__image" id="img10">
+                </button>
+            </div>
+
+            <div class="gallery__image-wrapper">
+                <button type="button" class="gallery__img-btn">
+                    <img src="assets/images_mom/11.jpg"width="" height=""  alt="Photo 11" class="gallery__image" id="img11">
+                </button>
+            </div>
+
+            <div class="gallery__image-wrapper">
+                <button type="button" class="gallery__img-btn">
+                    <img src="assets/images_mom/12.jpg" width="" height="" alt="Photo 12" class="gallery__image" id="img12">
+                </button>
+            </div>
+
+            <div class="gallery__image-wrapper">
+                <button type="button" class="gallery__img-btn">
+                    <img src="assets/images_mom/13.jpg"width="" height=""  alt="Photo 13" class="gallery__image" id="img13">
+                </button>
+            </div>
+
+            <div class="gallery__image-wrapper">
+                <button type="button" class="gallery__img-btn">
+                    <img src="assets/images_mom/14.jpg" width="" height="" alt="Photo 14" class="gallery__image" id="img14">
+                </button>
+            </div>
+
+            <div class="gallery__image-wrapper">
+                <button type="button" class="gallery__img-btn">
+                    <img src="assets/images_mom/15.jpg" width="" height="" alt="Photo 15" class="gallery__image" id="img15">
+                </button>
+            </div>
+
+            <div class="gallery__image-wrapper">
+                <button type="button" class="gallery__img-btn">
+                    <img src="assets/images_mom/16.jpg" width="" height="" alt="Photo 16" class="gallery__image" id="img16">
+                </button>
+            </div>
+
+            <div class="gallery__image-wrapper">
+                <button type="button" class="gallery__img-btn">
+                    <img src="assets/images_mom/17.jpg" width="" height="" alt="Photo 17" class="gallery__image" id="img17">
+                </button>
+            </div>
         </div>
+        <div id="modal__window">
+            <button type="button" id="modal__close-btn" aria-label="Close image gallery">&times;</button>
+            <!-- <div class="modal-content"> -->
+                <div class="modal__slide">
+                    <img class="modal__top-image" src="assets/images_mom/1.jpg" alt="" width="" height="" >
+                </div>
+                <div class="modal__slide">
+                    <img class="modal__top-image" src="assets/images_mom/2.jpg" alt="" width="" height="" >
+                </div>
+                <div class="modal__slide">
+                    <img class="modal__top-image" src="assets/images_mom/3.jpg" alt="" width="" height="" >
+                </div>
+                 <div class="modal__slide">
+                    <img class="modal__top-image" src="assets/images_mom/4.jpg" alt="" width="" height="" >
+                </div>
+                 <div class="modal__slide">
+                    <img class="modal__top-image" src="assets/images_mom/5.jpg" alt="" width="" height="" >
+                </div>
+                 <div class="modal__slide">
+                    <img class="modal__top-image" src="assets/images_mom/6.jpg" alt="" width="" height="" >
+                </div>
+                 <div class="modal__slide">
+                    <img class="modal__top-image" src="assets/images_mom/7.jpg" alt="" width="" height="" >
+                </div>
+                 <div class="modal__slide">
+                    <img class="modal__top-image" src="assets/images_mom/8.jpg" alt="" width="" height="" >
+                </div>
+                 <div class="modal__slide">
+                    <img class="modal__top-image" src="assets/images_mom/9.jpg" alt="" width="" height="" >
+                </div>
+                 <div class="modal__slide">
+                    <img class="modal__top-image" src="assets/images_mom/10.jpg" alt="" width="" height="" >
+                </div>
+                 <div class="modal__slide">
+                    <img class="modal__top-image" src="assets/images_mom/11.jpg" alt="" width="" height="" >
+                </div>
+                 <div class="modal__slide">
+                    <img class="modal__top-image" src="assets/images_mom/12.jpg" alt="" width="" height="" >
+                </div>
+                 <div class="modal__slide">
+                    <img class="modal__top-image" src="assets/images_mom/13.jpg" alt="" width="" height="" >
+                </div>
+                 <div class="modal__slide">
+                    <img class="modal__top-image" src="assets/images_mom/14.jpg" alt="" width="" height="" >
+                </div>
+                 <div class="modal__slide">
+                    <img class="modal__top-image" src="assets/images_mom/15.jpg" alt="" width="" height="" >
+                </div>
+                 <div class="modal__slide">
+                    <img class="modal__top-image" src="assets/images_mom/16.jpg" alt="" width="" height="" >
+                </div>
+                <div class="modal__slide">
+                    <img class="modal__top-image" src="assets/images_mom/17.jpg" alt="" width="" height="" >
+                </div>
+                <div class="modal__nav-buttons-container">
+                    <button type="button" class="modal__prev-btn"aria-label="Previous gallery image">&#10094;</button>
+                    <button type="button" class="modal__next-btn"aria-label="Next gallery image">&#10095;</button>
+                </div>
 
-        <div class="gallery__image-wrapper">
-            <img src="assets/images_mom/2.jpg" width="" height="" alt="Photo 2" class="gallery-image">
+                <div class="modal__image-list-container">
+                    <div class="modal__list-item">
+                        <img class="modal__list-image" src="assets/images_mom/1.jpg" alt="" width="" height="">
+                    </div>
+                    <div class="modal__list-item">
+                        <img class="modal__list-image" src="assets/images_mom/2.jpg" alt="" width="" height="">
+                    </div>
+                    <div class="modal__list-item">
+                        <img class="modal__list-image" src="assets/images_mom/3.jpg" alt="" width="" height="">
+                    </div>
+                    <div class="modal__list-item">
+                        <img class="modal__list-image" src="assets/images_mom/4.jpg" alt="" width="" height="">
+                    </div>
+                    <div class="modal__list-item">
+                        <img class="modal__list-image" src="assets/images_mom/5.jpg" alt="" width="" height="">
+                    </div>
+                    <div class="modal__list-item">
+                        <img class="modal__list-image" src="assets/images_mom/6.jpg" alt="" width="" height="">
+                    </div>
+                    <div class="modal__list-item">
+                        <img class="modal__list-image" src="assets/images_mom/7.jpg" alt="" width="" height="">
+                    </div>
+                    <div class="modal__list-item">
+                        <img class="modal__list-image" src="assets/images_mom/8.jpg" alt="" width="" height="">
+                    </div>
+                    <div class="modal__list-item">
+                        <img class="modal__list-image" src="assets/images_mom/9.jpg" alt="" width="" height="">
+                    </div>
+                    <div class="modal__list-item">
+                        <img class="modal__list-image" src="assets/images_mom/10.jpg" alt="" width="" height="">
+                    </div>
+                    <div class="modal__list-item">
+                        <img class="modal__list-image" src="assets/images_mom/11.jpg" alt="" width="" height="">
+                    </div>
+                    <div class="modal__list-item">
+                        <img class="modal__list-image" src="assets/images_mom/12.jpg" alt="" width="" height="">
+                    </div>
+                    <div class="modal__list-item">
+                        <img class="modal__list-image" src="assets/images_mom/13.jpg" alt="" width="" height="">
+                    </div>
+                    <div class="modal__list-item">
+                        <img class="modal__list-image" src="assets/images_mom/14.jpg" alt="" width="" height="">
+                    </div>
+                    <div class="modal__list-item">
+                        <img class="modal__list-image" src="assets/images_mom/15.jpg" alt="" width="" height="">
+                    </div>
+                    <div class="modal__list-item">
+                        <img class="modal__list-image" src="assets/images_mom/16.jpg" alt="" width="" height="">
+                    </div>
+                    <div class="modal__list-item">
+                        <img class="modal__list-image" src="assets/images_mom/17.jpg" alt="" width="" height="">
+                    </div>
+                </div>
+            <!-- </div> -->
         </div>
-
-        <div class="gallery__image-wrapper">
-            <img src="assets/images_mom/3.jpg" width="" height="" alt="Photo 3" class="gallery-image">
-        </div>
-
-        <div class="gallery__image-wrapper">
-            <img src="assets/images_mom/4.jpg" width="" height="" alt="Photo 4" class="gallery-image">
-        </div>
-
-        <div class="gallery__image-wrapper">
-            <img src="assets/images_mom/5.jpg" width="" height="" alt="Photo 5" class="gallery-image">
-        </div>
-
-        <div class="gallery__image-wrapper">
-            <img src="assets/images_mom/6.jpg" width="" height="" alt="Photo 6" class="gallery-image">
-        </div>
-
-        <div class="gallery__image-wrapper">
-            <img src="assets/images_mom/7.jpg" width="" height="" alt="Photo 7" class="gallery-image">
-        </div>
-
-        <div class="gallery__image-wrapper">
-            <img src="assets/images_mom/8.jpg"width="" height=""  alt="Photo 8" class="gallery-image">
-        </div>
-
-        <div class="gallery__image-wrapper">
-            <img src="assets/images_mom/9.jpg" width="" height="" alt="Photo 9" class="gallery-image">
-        </div>
-
-        <!-- <img src="assets/images_mom/10.jpg"width="" height=""  alt="Photo 10" class="gallery-image"> -->
-
-        <div class="gallery__image-wrapper">
-            <img src="assets/images_mom/11.jpg"width="" height=""  alt="Photo 11" class="gallery-image">
-        </div>
-
-        <div class="gallery__image-wrapper">
-            <img src="assets/images_mom/12.jpg" width="" height="" alt="Photo 12" class="gallery-image">
-        </div>
-
-        <div class="gallery__image-wrapper">
-            <img src="assets/images_mom/13.jpg"width="" height=""  alt="Photo 13" class="gallery-image">
-        </div>
-
-        <div class="gallery__image-wrapper">
-            <img src="assets/images_mom/14.jpg" width="" height="" alt="Photo 14" class="gallery-image">
-        </div>
-
-        <div class="gallery__image-wrapper">
-            <img src="assets/images_mom/15.jpg" width="" height="" alt="Photo 15" class="gallery-image">
-        </div>
-
-        <div class="gallery__image-wrapper">
-            <img src="assets/images_mom/16.jpg" width="" height="" alt="Photo 16" class="gallery-image">
-        </div>
-
-        <div class="gallery__image-wrapper">
-            <img src="assets/images_mom/17.jpg" width="" height="" alt="Photo 17" class="gallery-image">
-        </div>
-    </div>
-         <button id="toTopBtn" type="button" aria-label="Back to top">↑</button>
+    </main>
+        <button id="toTopBtn" type="button" aria-label="Back to top">↑</button>
 
 </body>
 </html>

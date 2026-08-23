@@ -37,10 +37,10 @@ if (slides.length) {
 
         for (let i = 0; i < slides.length; i++) {
             slides[i].classList.remove('active');
-            if (heroContents[i]) heroContents[i].classList.remove('textUp_animation');
+            if (heroContents[i]) heroContents[i].classList.remove('textUp_animation'); ;//protect against the possibility that the number of .hero_content elements doesn't match the number of .slide elements, or
         }
 
-        if (slides[currentSlide]) slides[currentSlide].classList.add('active');
+        if (slides[currentSlide]) slides[currentSlide].classList.add('active');//protect against  the possibility that currentSlide isn't valid.
         if (heroContents[currentSlide]) {
             void heroContents[currentSlide].offsetWidth;
             heroContents[currentSlide].classList.add('textUp_animation');
@@ -69,29 +69,25 @@ if (slides.length) {
 
 
 // Mobile navigation functionality (guarded)
-const openBtn = document.querySelector('.open_btn');
+const openBtn = document.querySelector('.open-nav-button');
 const mobileNav = document.querySelector('.nav_mobile');
-const closeBtn = document.querySelector('.close_btn');
+const closeBtn = document.querySelector('.close-nav-btn');
 
 function openMobileNav() {
-    if (mobileNav) mobileNav.classList.add('open');
+    mobileNav.classList.add('open');
 }
 
 function closeMobileNav() {
-    if (mobileNav) mobileNav.classList.remove('open');
+    mobileNav.classList.remove('open');
 }
 
-if (openBtn) {
     openBtn.addEventListener('click', () => {
         openMobileNav();
     });
-}
 
-if (closeBtn) {
     closeBtn.addEventListener('click', () => {
         closeMobileNav();
     });
-}
 
 
 
@@ -113,16 +109,16 @@ const mobileNavLinks = document.querySelectorAll('.nav__mobile__link');
 const desktopNavLinks = document.querySelectorAll('.nav__desktop__link');
     desktopNavLinks.forEach(link => { // Add click event listener to each link
         link.addEventListener('click', () => {
-            desktopNavLinks.forEach(item => item.classList.remove('active'));// Remove 'active' class from all links
+            desktopNavLinks.forEach(item => item.classList.remove('active'));// Remove 'active' class from ALL LINKS
             link.classList.add('active');
         });
     });
 
 
 
-// Back to top button functionality (guarded)
+
+// Back to top button functionality
 const toTopBtn = document.getElementById("toTopBtn");
-if (toTopBtn) {
     window.addEventListener("scroll", () => {
         if (window.scrollY > 300) {
             toTopBtn.classList.add("active");
@@ -134,4 +130,79 @@ if (toTopBtn) {
     toTopBtn.addEventListener("click", () => {
         window.scrollTo({ top: 0, behavior: "smooth" });
     });
+
+
+
+//modal gallery
+
+
+
+
+const modalWindow = document.getElementById('modal__window');
+const modalCloseBtn = document.getElementById('modal__close-btn');
+const imageList = document.querySelectorAll('.gallery__img-btn');
+const modalSlides = document.querySelectorAll('.modal__slide');
+const  modalPrevtButton  = document.querySelector('.modal__prev-btn');
+const  modalNextButton = document.querySelector('.modal__next-btn');
+let index = 0;
+
+
+
+
+
+
+
+
+
+if (imageList.length) {
+
+
+imageList.forEach((image, position) => {
+    image.addEventListener('click', () => {
+        showModalSlide(position);
+        console.log(position, "position");
+    })
+});
+
+
+
+modalNextButton.addEventListener('click', () => {
+            showModalSlide( index + 1);
+            console.log(index,'next');
+
+        });
+
+        modalPrevtButton.addEventListener('click', () => {
+        showModalSlide(index - 1);
+        console.log(index,'prev');
+    });
+
+
+    function showModalSlide(newIndex) {
+        if(newIndex >= modalSlides.length) {
+            newIndex = 0;
+        }
+        if(newIndex < 0) {
+            newIndex = modalSlides.length - 1;
+        }
+
+        index = newIndex;
+
+        modalWindow.classList.add("active");
+        modalSlides.forEach(item => item.classList.remove('active'));
+        modalSlides[index].classList.add("active");
+        console.log(index,'index');
+
+
+
+    }
+
+
+
+    modalCloseBtn.addEventListener('click', () => modalWindow.classList.remove("active"));
+
+
 }
+
+
+
