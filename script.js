@@ -209,7 +209,27 @@ function prevModalSlide() {
 
 
 
-    modalCloseBtn.addEventListener('click', () => modalWindow.classList.remove("active"));
+    modalCloseBtn.addEventListener('click', () => {
+        closeModal();
+    });
+
+
+    function closeModal() {
+    modalWindow.classList.remove("active");
+    }
+
+
+    //logic for closing modal on click outside
+    modalSlides.forEach(slide => {
+    slide.addEventListener('click', (event) => {
+
+        if(event.target === slide) {
+            closeModal();
+        }
+
+    })
+
+});
 
 
 }

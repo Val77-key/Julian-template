@@ -710,7 +710,7 @@ background-color: var(--link-background-color);
     justify-content: center;
     align-items: center;
     inline-size: 100%;
-    /* transform: translateY(-4px); ????why kills close button??? */
+    /* ????why kills close button???*/
     /* margin: 0 auto ; */
 
 }
