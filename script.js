@@ -171,6 +171,29 @@ modalImageItem.forEach((image, position) => {
 
 
 
+//swipe change slide logic
+let startX = 0;
+
+modalWindow.addEventListener("pointerdown", (event) => {
+    startX = event.clientX;
+});
+
+modalWindow.addEventListener("pointerup", (event) => {
+    const distance = event.clientX - startX;
+
+    if (distance < -50) {
+        console.log(event.target);
+        nextModalSlide();
+    }
+
+    if (distance > 50) {
+        prevModalSlide();
+    }
+});
+
+
+
+
 function nextModalSlide() {
     showModalSlide(index + 1);
 }
@@ -188,6 +211,8 @@ function prevModalSlide() {
         });
 
 
+
+        //showSkide main function
     function showModalSlide(newIndex) {
         if(newIndex >= modalSlides.length) {
             newIndex = 0;
