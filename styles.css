@@ -665,6 +665,7 @@ background-color: var(--link-background-color);
 }
 
 #modal__window {
+    /* touch-action: none; */
     display: none;
     position: fixed;
     inset: 0;
@@ -706,6 +707,7 @@ background-color: var(--link-background-color);
 
 .modal__slide {
     display: none;
+    touch-action: none;
     /* border: 2px solid blue; */
     flex: 1; /*  shorthand for flex: 1 1 0 */
     min-block-size: 0;/*????????????*/
