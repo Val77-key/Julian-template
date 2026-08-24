@@ -37,14 +37,12 @@ if (slides.length) {
 
         for (let i = 0; i < slides.length; i++) {
             slides[i].classList.remove('active');
-            if (heroContents[i]) heroContents[i].classList.remove('textUp_animation'); ;//protect against the possibility that the number of .hero_content elements doesn't match the number of .slide elements, or
+            heroContents[i].classList.remove('textUp_animation');
         }
 
-        if (slides[currentSlide]) slides[currentSlide].classList.add('active');//protect against  the possibility that currentSlide isn't valid.
-        if (heroContents[currentSlide]) {
-            void heroContents[currentSlide].offsetWidth;
-            heroContents[currentSlide].classList.add('textUp_animation');
-        }
+        slides[currentSlide].classList.add('active');
+        void heroContents[currentSlide].offsetWidth;
+        heroContents[currentSlide].classList.add('textUp_animation');
     }
 
     showSlides(slideIndex);
@@ -144,6 +142,7 @@ const imageList = document.querySelectorAll('.gallery__img-btn');
 const modalSlides = document.querySelectorAll('.modal__slide');
 const  modalPrevtButton  = document.querySelector('.modal__prev-btn');
 const  modalNextButton = document.querySelector('.modal__next-btn');
+const modalImageItem = document.querySelectorAll('.modal__list-item');
 let index = 0;
 
 
@@ -151,7 +150,7 @@ let index = 0;
 
 
 
-
+//modal slides logic
 
 
 if (imageList.length) {
@@ -160,22 +159,33 @@ if (imageList.length) {
 imageList.forEach((image, position) => {
     image.addEventListener('click', () => {
         showModalSlide(position);
-        console.log(position, "position");
+    })
+});
+
+
+modalImageItem.forEach((image, position) => {
+    image.addEventListener('click', () => {
+        showModalSlide(position);
     })
 });
 
 
 
-modalNextButton.addEventListener('click', () => {
-            showModalSlide( index + 1);
-            console.log(index,'next');
+function nextModalSlide() {
+    showModalSlide(index + 1);
+}
 
+function prevModalSlide() {
+    showModalSlide(index - 1);
+}
+
+        modalNextButton.addEventListener('click', () => {
+            nextModalSlide();
         });
 
         modalPrevtButton.addEventListener('click', () => {
-        showModalSlide(index - 1);
-        console.log(index,'prev');
-    });
+            prevModalSlide();
+        });
 
 
     function showModalSlide(newIndex) {
@@ -191,10 +201,10 @@ modalNextButton.addEventListener('click', () => {
         modalWindow.classList.add("active");
         modalSlides.forEach(item => item.classList.remove('active'));
         modalSlides[index].classList.add("active");
-        console.log(index,'index');
 
-
-
+        modalImageItem.forEach(item => item.classList.remove('active'));
+        modalImageItem[index].classList.add("active");
+        modalImageItem[index].focus();
     }
 
 
