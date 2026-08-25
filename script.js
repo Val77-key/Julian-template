@@ -61,12 +61,51 @@ if (slides.length) {
             resetAutoSlide();
         });
     }
+
+
+    //swipe slides logic
+    let startXmain = 0;
+
+
+    slides.forEach(slide => {
+        slide.addEventListener("pointerdown", (event) => {
+        startXmain = event.clientX;
+    });
+    });
+
+
+    slides.forEach(slide => {
+        slide.addEventListener("pointerup", (event) => {
+        let distanceMain = 0;
+
+        distanceMain = event.clientX - startXmain;
+
+
+
+        if (distanceMain < -50) {
+            changeSlide(1);
+            resetAutoSlide();
+
+        }
+
+        if (distanceMain > 50) {
+            changeSlide(-1);
+            resetAutoSlide();
+
+        }
+    });
+    });
+
+
+
+
 }
 
 
 
 
-// Mobile navigation functionality (guarded)
+
+// Mobile navigation functionality
 const openBtn = document.querySelector('.open-nav-button');
 const mobileNav = document.querySelector('.nav_mobile');
 const closeBtn = document.querySelector('.close-nav-btn');
@@ -131,10 +170,10 @@ const toTopBtn = document.getElementById("toTopBtn");
 
 
 
+
+
+
 //modal gallery
-
-
-
 
 const modalWindow = document.getElementById('modal__window');
 const modalCloseBtn = document.getElementById('modal__close-btn');
@@ -174,15 +213,24 @@ modalImageItem.forEach((image, position) => {
 //swipe change slide logic
 let startX = 0;
 
-modalWindow.addEventListener("pointerdown", (event) => {
+
+modalSlides.forEach(slide => {
+    slide.addEventListener("pointerdown", (event) => {
     startX = event.clientX;
 });
+});
 
-modalWindow.addEventListener("pointerup", (event) => {
-    const distance = event.clientX - startX;
+
+modalSlides.forEach(slide => {
+    slide.addEventListener("pointerup", (event) => {
+
+    let distance = 0;
+
+    distance = event.clientX - startX;
+
+
 
     if (distance < -50) {
-        console.log(event.target);
         nextModalSlide();
     }
 
@@ -190,6 +238,8 @@ modalWindow.addEventListener("pointerup", (event) => {
         prevModalSlide();
     }
 });
+});
+
 
 
 
