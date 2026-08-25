@@ -193,7 +193,7 @@ if (imageList.length) {
     imageList.forEach(image => {
         image.addEventListener('pointerdown', (event) => {
             if(event.pointerType === 'touch') {
-                image.classList.remove('touched');
+                imageList.forEach(image => image.classList.remove('touched'));
                 image.classList.add('touched');
             }
         })
