@@ -76,9 +76,8 @@ if (slides.length) {
 
     slides.forEach(slide => {
         slide.addEventListener("pointerup", (event) => {
-        let distanceMain = 0;
 
-        distanceMain = event.clientX - startXmain;
+       const distanceMain = event.clientX - startXmain;
 
 
 
@@ -187,11 +186,25 @@ let index = 0;
 
 
 
+//touch-hover effect on mobile
+
+if (imageList.length) {
+
+    imageList.forEach(image => {
+        image.addEventListener('pointerdown', (event) => {
+            if(event.pointerType === 'touch') {
+                image.classList.remove('touched');
+                image.classList.add('touched');
+            }
+        })
+    })
+}
+
+
+
 
 
 //modal slides logic
-
-
 if (imageList.length) {
 
 
@@ -224,9 +237,7 @@ modalSlides.forEach(slide => {
 modalSlides.forEach(slide => {
     slide.addEventListener("pointerup", (event) => {
 
-    let distance = 0;
-
-    distance = event.clientX - startX;
+   const distance = event.clientX - startX;
 
 
 

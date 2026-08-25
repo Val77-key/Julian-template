@@ -645,6 +645,12 @@ background-color: var(--link-background-color);
     transition: transform 250ms ease, box-shadow 250ms ease, opacity 0.4s ease;
 }
 
+.gallery__img-btn.touched {
+    opacity: 0.5;
+    transform: translateY(-4px);
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.2);
+}
+
 
 
 .gallery__img-btn:focus-visible{
