@@ -1,9 +1,6 @@
 // Hero slider functionality (guarded so pages without a slider won't throw)
 const slides = document.querySelectorAll('.slide');
 if (slides.length) {
-    const nextButton = document.querySelector('.next_button');
-    const previousButton = document.querySelector('.previous_button');
-    const heroContents = document.querySelectorAll('.hero_content');
     const AUTO_SLIDE_DELAY = 6000;
     let interval;
     let slideIndex = 1;
@@ -37,30 +34,18 @@ if (slides.length) {
 
         for (let i = 0; i < slides.length; i++) {
             slides[i].classList.remove('active');
-            heroContents[i].classList.remove('textUp_animation');
         }
 
+        //might need rerstart animation with js and add separate animation class
+        //box.classList.remove("animate");
+        //void box.offsetWidth;
+        //box.classList.add("animate");
+
         slides[currentSlide].classList.add('active');
-        void heroContents[currentSlide].offsetWidth;
-        heroContents[currentSlide].classList.add('textUp_animation');
     }
 
     showSlides(slideIndex);
     startAutoSlide();
-
-    if (nextButton) {
-        nextButton.addEventListener('click', () => {
-            changeSlide(1);
-            resetAutoSlide();
-        });
-    }
-
-    if (previousButton) {
-        previousButton.addEventListener('click', () => {
-            changeSlide(-1);
-            resetAutoSlide();
-        });
-    }
 
 
     //swipe slides logic
@@ -320,5 +305,30 @@ function prevModalSlide() {
 
 }
 
+//reviews section horizontal slide logic
+
+
+const track = document.querySelector('.reviews__track');
+let reviewsIndex = 0;
+
+
+function showHorizontalSlide(){
+    const offset = reviewsIndex * -100;
+    track.style.transform =`translateX(${offset}%)`;
+}
+
+
+function nextReview() {
+    reviewsIndex++;
+
+    if (reviewsIndex >= 4) {
+        reviewsIndex = 0;
+    }
+
+    showHorizontalSlide();
+}
+
+
+setInterval(nextReview, 5000);
 
 
