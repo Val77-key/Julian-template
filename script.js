@@ -127,13 +127,88 @@ const mobileNavLinks = document.querySelectorAll('.nav__mobile__link');
 
 
 // Desktop navigation links functionality
+// const desktopNavLinks = document.querySelectorAll('.nav__desktop__link');
+//     desktopNavLinks.forEach(link => { // Add click event listener to each link
+//         link.addEventListener('click', () => {
+//             desktopNavLinks.forEach(item => item.classList.remove('active'));// Remove 'active' class from ALL LINKS
+//             link.classList.add('active');
+//         });
+//     });
+
+
+
+
+
+
+
+
+// Desktop navigation links functionality for highlighting the current section or page based on the URL
+
+
 const desktopNavLinks = document.querySelectorAll('.nav__desktop__link');
-    desktopNavLinks.forEach(link => { // Add click event listener to each link
-        link.addEventListener('click', () => {
-            desktopNavLinks.forEach(item => item.classList.remove('active'));// Remove 'active' class from ALL LINKS
-            link.classList.add('active');
-        });
-    });
+const mobileNavLinksForHighlight = document.querySelectorAll('.nav__mobile__link');
+
+function updateActiveNavLink() {
+    const currentPath = window.location.pathname;
+    const currentHash = window.location.hash;
+
+    desktopNavLinks.forEach((link) => {
+
+    const linkUrl = new URL(link.href);
+
+    const isSamePage = linkUrl.pathname === currentPath;
+
+
+    const isCurrentSection = isSamePage && linkUrl.hash && linkUrl.hash === currentHash;
+
+    const isCurrentSeparatePage = isSamePage && !linkUrl.hash && !currentHash;
+
+        if (isCurrentSection || isCurrentSeparatePage) {
+        link.classList.add('active');
+        } else {
+        link.classList.remove('active');
+}
+  });
+}
+
+updateActiveNavLink();
+
+window.addEventListener('hashchange', updateActiveNavLink);
+
+
+
+// Mobile navigation links functionality for highlighting the current section or page based on the URL
+
+function updateActiveNavMobileLink() {
+    const currentPath = window.location.pathname;
+    const currentHash = window.location.hash;
+
+    mobileNavLinksForHighlight.forEach((link) => {
+
+    const linkUrl = new URL(link.href);
+
+    const isSamePage = linkUrl.pathname === currentPath;
+
+
+    const isCurrentSection = isSamePage && linkUrl.hash && linkUrl.hash === currentHash;
+
+    const isCurrentSeparatePage = isSamePage && !linkUrl.hash && !currentHash;
+
+        if (isCurrentSection || isCurrentSeparatePage) {
+        link.classList.add('active');
+        } else {
+        link.classList.remove('active');
+}
+  });
+}
+
+updateActiveNavMobileLink();
+
+window.addEventListener('hashchange', updateActiveNavMobileLink);
+
+
+
+
 
 
 
@@ -258,7 +333,7 @@ function prevModalSlide() {
 
 
 
-        //showSkide main function
+        //showSlide main function
     function showModalSlide(newIndex) {
         if(newIndex >= modalSlides.length) {
             newIndex = 0;
@@ -305,12 +380,13 @@ function prevModalSlide() {
 
 }
 
-//reviews section horizontal slide logic
-
-
+//reviews section horizontal slide logic with defense for existence of the track element
 const track = document.querySelector('.reviews__track');
+
+if (track) {
 let reviewsIndex = 0;
 
+    // console.log(track);
 
 function showHorizontalSlide(){
     const offset = reviewsIndex * -100;
@@ -330,5 +406,8 @@ function nextReview() {
 
 
 setInterval(nextReview, 5000);
+
+
+}
 
 
