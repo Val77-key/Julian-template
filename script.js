@@ -54,6 +54,7 @@ if (slides.length) {
 
     slides.forEach(slide => {
         slide.addEventListener("pointerdown", (event) => {
+        console.log(event.pointerType);
         startXmain = event.clientX;
     });
     });
@@ -80,9 +81,6 @@ if (slides.length) {
     });
     });
 
-
-
-
 }
 
 
@@ -102,7 +100,7 @@ function closeMobileNav() {
     mobileNav.classList.remove('open');
 }
 
-    openBtn.addEventListener('click', () => {
+    openBtn.addEventListener('click', (e) => {
         openMobileNav();
     });
 
@@ -123,20 +121,6 @@ const mobileNavLinks = document.querySelectorAll('.nav__mobile__link');
             closeMobileNav(); // Close the mobile navigation menu after clicking a link
         });
     });
-
-
-
-// Desktop navigation links functionality
-// const desktopNavLinks = document.querySelectorAll('.nav__desktop__link');
-//     desktopNavLinks.forEach(link => { // Add click event listener to each link
-//         link.addEventListener('click', () => {
-//             desktopNavLinks.forEach(item => item.classList.remove('active'));// Remove 'active' class from ALL LINKS
-//             link.classList.add('active');
-//         });
-//     });
-
-
-
 
 
 
@@ -223,7 +207,7 @@ const toTopBtn = document.getElementById("toTopBtn");
         }
     });
 
-    toTopBtn.addEventListener("click", () => {
+    toTopBtn.addEventListener("pointerdown", () => {
         window.scrollTo({ top: 0, behavior: "smooth" });
     });
 
@@ -411,3 +395,159 @@ setInterval(nextReview, 5000);
 }
 
 
+
+const submitBtn = document.getElementById('submit-btn');
+const contactForm = document.querySelector('.contact__form');
+const formMessage = document.querySelector('.form__message');
+
+
+if (contactForm) {
+
+       function handleFormSubmit(event) {
+        event.preventDefault ();
+        contactForm.classList.add('close');
+        formMessage.classList.add('success');
+    }
+
+    contactForm.addEventListener('submit', handleFormSubmit);
+
+}
+
+
+
+
+if (submitBtn) {
+    submitBtn.addEventListener('click', (event) => {
+        event.preventDefault();
+        contactForm.classList.add('close');
+        formMessage.classList.add('success');
+    });
+}
+
+
+
+
+
+const aboutSection = document.querySelector('.about-section');
+const aboutImageContainer = document.querySelector('.about__image-container');
+const aboutContent = document.querySelector('.about__content');
+const roleSection = document.querySelector('.role');
+const servicesSection = document.querySelector('.services-section');
+const servicesItem = document.querySelector('.services__grid-item');
+const mainPageGallery = document.querySelector('.main-page__gallery__section');
+const mainPageGalleryItem = document.querySelector('.main-page__gallery__heading-container');
+const reviewsSection = document.querySelector('.reviews-section');
+const contactSection = document.querySelector('.contact-section');
+const gallerySection = document.querySelector('.gallery__container');
+const videosSection = document.querySelector('.videos');
+
+
+
+if(aboutSection) {
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                aboutImageContainer.classList.add('appears');
+            }
+        });
+    }, { threshold: 0.2 });
+
+    observer.observe(aboutSection);
+}
+
+if(aboutContent) {
+    const observerContent = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                aboutContent.classList.add('appears');
+            }
+        });
+    }, { threshold: 0.3});
+
+    observerContent.observe(aboutContent);
+}
+
+if(roleSection) {
+    const observerRole = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                roleSection.classList.add('appears');
+            }
+        });
+    }, { threshold: 0.3 });
+
+    observerRole.observe(roleSection);
+}
+
+if(servicesSection) {
+    const observerServices = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                servicesSection.classList.add('appears');
+            }
+        });
+    }, { threshold: 0.3});
+
+    observerServices.observe(servicesItem);
+}
+
+if(mainPageGallery) {
+    const observerGallery = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                mainPageGallery.classList.add('appears');
+            }
+        });
+    }, { threshold: 0.3});
+
+    observerGallery.observe(mainPageGalleryItem);
+}
+
+if(reviewsSection) {
+    const observerReviews = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                reviewsSection.classList.add('appears');
+            }
+        });
+    }, { threshold: 0.3});
+
+    observerReviews.observe(reviewsSection);
+}
+
+
+if(contactSection) {
+    const observerContact = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                contactSection.classList.add('appears');
+            }
+        });
+    }, { threshold: 0.3});
+
+    observerContact.observe(contactSection);
+}
+
+if(gallerySection) {
+    const observerGallerySection = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                gallerySection.classList.add('appears');
+            }
+        });
+    }, { threshold: 0.3});
+
+    observerGallerySection.observe(gallerySection);
+}
+
+if(videosSection) {
+    const observerVideos = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                videosSection.classList.add('appears');
+            }
+        });
+    }, { threshold: 0.3});
+
+    observerVideos.observe(videosSection);
+}
