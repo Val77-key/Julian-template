@@ -425,7 +425,7 @@ border: 2px solid var(--color-text-primary);
     /* border: 2px solid red; */
     padding: 0 1rem;
     position: absolute;
-    top: 40%;
+    top: 35%;
     left: 0;
     right: 0;
 }
@@ -1307,7 +1307,7 @@ display:block;
  .logo__link:focus-visible{
     outline: 1px solid var(--focus-color);
  }
- 
+
  #logoVal{
     font-family:cursive;
     font-style: italic;
