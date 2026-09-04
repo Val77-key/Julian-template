@@ -396,37 +396,63 @@ setInterval(nextReview, 5000);
 
 
 
-const submitBtn = document.getElementById('submit-btn');
+
+
+//handles form submition
+
+
+
+
 const contactForm = document.querySelector('.contact__form');
 const formMessage = document.querySelector('.form__message');
+const submitBtn = document.getElementById('submit-btn');
 
 
 if (contactForm) {
+  contactForm.addEventListener('submit', async (event) => {
+    event.preventDefault();
 
-       function handleFormSubmit(event) {
-        event.preventDefault ();
-        contactForm.classList.add('close');
-        formMessage.classList.add('success');
+    const formData = new FormData(contactForm);
+
+    try {
+      submitBtn.disabled = true; //The submit button is disabled while the form is being sent to prevent duplicate submissions.
+
+      const response = await fetch(contactForm.action, {
+        method: 'POST',
+        body: formData,
+        headers: {
+          Accept: 'application/json'
+        }
+      });
+
+      if (!response.ok) {
+        throw new Error('The form could not be sent.');
+      }
+
+      contactForm.reset();
+      contactForm.classList.add('close');
+      formMessage.classList.add('success');
+
+    } catch (error) {
+      console.error(error);
+      alert('Sorry, your message could not be sent. Please try again.');
+
+    } finally {
+      submitBtn.disabled = false;//enables it again if the request fails and the form remains visible.
     }
-
-    contactForm.addEventListener('submit', handleFormSubmit);
-
+  });
 }
 
 
 
 
-if (submitBtn) {
-    submitBtn.addEventListener('click', (event) => {
-        event.preventDefault();
-        contactForm.classList.add('close');
-        formMessage.classList.add('success');
-    });
-}
 
 
 
 
+
+
+//intersectionObserver content animation logic
 
 const aboutSection = document.querySelector('.about-section');
 const aboutImageContainer = document.querySelector('.about__image-container');
@@ -454,6 +480,7 @@ if(aboutSection) {
 
     observer.observe(aboutSection);
 }
+
 
 if(aboutContent) {
     const observerContent = new IntersectionObserver((entries) => {

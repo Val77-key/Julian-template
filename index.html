@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="theme-color" content="#ffffff">
+    <!-- <meta name="theme-color" content="#ffffff"> -->
     <title>Larysa Robinson | Piano Teacher & Music Educator </title>
     <link rel="icon" type="image/png" href="favicon.png">
     <link rel="stylesheet" href="styles.css">
@@ -51,21 +51,19 @@
     </nav>
     <header class="hero-section" id="home">
         <div class="slide active">
-            <picture>
-                <source srcset="assets/images_mom/top8.webp" media="(min-width:54rem)">
-                <img src="assets/images_mom/top3.webp" width="1400" height="1400" alt="Larysa with autumn leaves" class="hero_image" draggable="false">
-            </picture>
-        </div>
-        <div class="slide active">
             <img src="assets/images_mom/top7.webp" width="1400" height="1400" alt="Larya in brown coat" class="hero_image" draggable="false">
         </div>
         <div class="slide active">
             <img src="assets/images_mom/top5.webp" width="1400" height="1400" alt="Larysa next to birch " class="hero_image" draggable="false">
         </div>
+         <div class="slide active">
+                <img src="assets/images_mom/top8.webp" width="1400" height="1400" alt="Larysa with autumn leaves" class="hero_image" draggable="false">
+        </div>
         <div class="hero__content">
             <p class="hero__uptext">Piano Teacher · In Person & Online</p>
             <h1 class="hero__main-heading">Let's make music something you look forward to.</h1>
             <p class="hero__downtext">Private piano lessons for students of all ages and levels — from first notes to performance preparation.</p>
+            <p class="hero__downtext">West Palmdale / Quartz Hill area, California</p>
             <div class="hero__buttons">
                 <a href="#contact" class="hero__buttons__inquire">Inquire About Lessons</a>
                 <a href="#about" class="hero__buttons__meet-Larysa">Meet Larysa</a>
@@ -75,7 +73,7 @@
     <main>
         <section class="about-section" id="about" aria-label="About me section">
             <div class="about__image-container">
-                <img src="assets/images_mom/top1.webp" width="1400" height="1400" alt="Lerysa in pink coat" class="about__image">
+                    <img src="assets/images_mom/top1.webp" width="1400" height="1400" alt="Lerysa in pink coat" class="about__image">
             </div>
                 <div class="about__content">
                     <p class="general__uptext">ABOUT LARYSA</p>
@@ -94,7 +92,6 @@
                 <p class="role__text">My role as a teacher is to guide each student toward their own goals while helping them build a strong musical foundation that they can carry with them for years to come."</p>
                 <p class="role__name"> - Larysa Robinson</p>
             </div>
-            <button id="toTopBtn" type="button" aria-label="Back to top">↑</button>
         </section>
         <section class="services-section" id="lessons" aria-label="services">
             <div class="services__content">
@@ -133,7 +130,7 @@
                         <p class="services__text">Every student has different strengths, challenges, interests, and goals.Rather than following exactly the same approach with everyone, I adapt lessons to the individual student. Together, we can create a learning experience that is challenging enough to encourage progress while remaining positive and enjoyable.</p>
                     </div>
                 </div>
-                <p class="services__last-paragraph">Interested in lessons?<a href="#contact"> Get in touch</a> to discuss your goals and find the right approach for you.</p>
+                <p class="services__last-paragraph">Interested in lessons?<a href="#contact" id="get-in-touch"> Get in touch</a> to discuss your goals and find the right approach for you.</p>
             </div>
         </section>
         <section class="main-page__gallery__section">
@@ -141,7 +138,7 @@
                 <p class="general__uptext">GALLERY</p>
                 <div class="main-page__gallery__heading-container">
                     <h4 class="general__heading">Moments from studio</h4>
-                    <a href="photo_gallery.html" class="main-page__gallery__heading-link">View all photos ⟶</a>
+                    <a href="photo_gallery.html" class="main-page__gallery__heading-link">View all media ⟶</a>
                 </div>
                 <div class="main-page__gallery">
                     <a href="photo_gallery.html"><img src="assets/images_mom/1.jpg" width="" height="" alt="" class="main-page__gallery__image"></a>
@@ -222,18 +219,18 @@
                             </div>
                         </div>
                     </div>
-                    <form action="" method="get" class="contact__form">
+                    <form action="https://formspree.io/f/xkjnbqkn" method="post" class="contact__form" autocomplete="on">
                         <div class="form-group">
                             <label for="name" class="contact__heading">Name:</label>
-                            <input type="text" id="name" name="name" placeholder="Your full name" autocomplete="name"><br>
+                            <input type="text" id="name" name="name" placeholder="Your full name" autocomplete="name" required><br>
                         </div>
                         <div class="form-group">
                             <label for="email" class="contact__heading">Email:</label>
-                            <input type="email" id="email" name="email"placeholder="your@email.com" autocomplete="email"><br>
+                            <input type="email" id="email" name="email"placeholder="your@email.com" autocomplete="email" required><br>
                         </div>
                         <div class="form-group">
                             <label for="message" class="contact__heading">Message:</label>
-                            <textarea id="message" name="message" placeholder="Tell me about yourself and what you are looking for.." autocomplete="message"></textarea><br>
+                            <textarea id="message" name="message" placeholder="Tell me about yourself and what you are looking for.." required></textarea><br>
                         </div>
                         <button type="submit" id="submit-btn">Send message</button>
                     </form>
@@ -253,5 +250,7 @@
                 <a href="https://www.linkedin.com/in/valentyn-kisilenko-892b333bb/" target="_blank" class="logo__link">developed by <span id="logoVal">VK</span></a>
             </div>
         </footer>
+    <button id="toTopBtn" type="button" aria-label="Back to top">↑</button>
 </body>
 </html>
+

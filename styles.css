@@ -17,61 +17,6 @@
   src: url('assets/fonts/playfair-display-v40-latin-500.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 
-/* playfair-display-600 - latin */
-@font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: 'Playfair Display';
-  font-style: normal;
-  font-weight: 600;
-  src: url('assets/fonts/playfair-display-v40-latin-600.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-}
-
-/* playfair-display-700 - latin */
-@font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: 'Playfair Display';
-  font-style: normal;
-  font-weight: 700;
-  src: url('assets/fonts/playfair-display-v40-latin-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-}
-
-/* playfair-display-800 - latin */
-@font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: 'Playfair Display';
-  font-style: normal;
-  font-weight: 800;
-  src: url('assets/fonts/playfair-display-v40-latin-800.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-}
-
-/* playfair-display-900 - latin */
-@font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: 'Playfair Display';
-  font-style: normal;
-  font-weight: 900;
-  src: url('assets/fonts/playfair-display-v40-latin-900.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-}
-
-
-/* dm-sans-200 - latin */
-@font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: 'DM Sans';
-  font-style: normal;
-  font-weight: 200;
-  src: url('assets/fonts/dm-sans-v17-latin-200.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-}
-
-/* dm-sans-300 - latin */
-@font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: 'DM Sans';
-  font-style: normal;
-  font-weight: 300;
-  src: url('assets/fonts/dm-sans-v17-latin-300.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-}
-
 /* dm-sans-regular - latin */
 @font-face {
   font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
@@ -79,51 +24,6 @@
   font-style: normal;
   font-weight: 400;
   src: url('assets/fonts/dm-sans-v17-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-}
-
-/* dm-sans-500 - latin */
-@font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: 'DM Sans';
-  font-style: normal;
-  font-weight: 500;
-  src: url('assets/fonts/dm-sans-v17-latin-500.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-}
-
-/* dm-sans-600 - latin */
-@font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: 'DM Sans';
-  font-style: normal;
-  font-weight: 600;
-  src: url('assets/fonts/dm-sans-v17-latin-600.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-}
-
-/* dm-sans-700 - latin */
-@font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: 'DM Sans';
-  font-style: normal;
-  font-weight: 700;
-  src: url('assets/fonts/dm-sans-v17-latin-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-}
-
-/* dm-sans-800 - latin */
-@font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: 'DM Sans';
-  font-style: normal;
-  font-weight: 800;
-  src: url('assets/fonts/dm-sans-v17-latin-800.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-}
-
-/* dm-sans-900 - latin */
-@font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: 'DM Sans';
-  font-style: normal;
-  font-weight: 900;
-  src: url('assets/fonts/dm-sans-v17-latin-900.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 
 /* eb-garamond-regular - latin */
@@ -144,133 +44,106 @@
   src: url('assets/fonts/eb-garamond-v33-latin-italic.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 
-/* eb-garamond-500 - latin */
-@font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: 'EB Garamond';
-  font-style: normal;
-  font-weight: 500;
-  src: url('assets/fonts/eb-garamond-v33-latin-500.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-}
-
-/* eb-garamond-500italic - latin */
-@font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: 'EB Garamond';
-  font-style: italic;
-  font-weight: 500;
-  src: url('assets/fonts/eb-garamond-v33-latin-500italic.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-}
-
-/* eb-garamond-600 - latin */
-@font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: 'EB Garamond';
-  font-style: normal;
-  font-weight: 600;
-  src: url('assets/fonts/eb-garamond-v33-latin-600.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-}
-
-/* eb-garamond-600italic - latin */
-@font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: 'EB Garamond';
-  font-style: italic;
-  font-weight: 600;
-  src: url('assets/fonts/eb-garamond-v33-latin-600italic.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-}
-
-/* eb-garamond-700 - latin */
-@font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: 'EB Garamond';
-  font-style: normal;
-  font-weight: 700;
-  src: url('assets/fonts/eb-garamond-v33-latin-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-}
-
-/* eb-garamond-700italic - latin */
-@font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: 'EB Garamond';
-  font-style: italic;
-  font-weight: 700;
-  src: url('assets/fonts/eb-garamond-v33-latin-700italic.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-}
-
-/* eb-garamond-800 - latin */
-@font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: 'EB Garamond';
-  font-style: normal;
-  font-weight: 800;
-  src: url('assets/fonts/eb-garamond-v33-latin-800.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-}
-
-/* eb-garamond-800italic - latin */
-@font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: 'EB Garamond';
-  font-style: italic;
-  font-weight: 800;
-  src: url('assets/fonts/eb-garamond-v33-latin-800italic.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-}
-
 
 
 
 
 :root { /*colors*/
 
-    --text-color-preset-1: rgb(42,28,14);
+    /* Main text */
+    --color-text-primary: rgb(42,28,14);
     --text-color-preset-2:rgba(122,98,81,100%);
     --text-color-preset-3:rgba(250,247,242,100%);
+
+     /* Accent */
     --text-color-preset-4:rgba(168,107,42,100%);
     --text-color-preset-5:rgb(108, 72, 32);
     --text-color-preset-6:rgb(202, 180, 163);
 
+     /* Backgrounds */
+    --color-background-body:rgba(250,247,242,100%);
+    --color-background-hero-section:rgba(250,247,242,100%);
     --about-background-color:rgba(37, 0, 0, 0);
     --services-background-color:rgba(242, 233, 220, 1);
+
+    /* --color-background-body:rgb(202, 180, 163); */
 
 
     --top-fixed-bar-background-color: rgba(250,247,242,94%);
     --mobile-nav-background:rgb(242,233,220);
+
+
     --to-top-button-background-color: rgba(250,247,242,64%);
+    --to-top-btn-bkgr:rgba(202, 180, 163,40%);
+
+    /* Accessibility */
     --focus-color:rgb(109, 90, 32);
     --active-link-color: rgb(164, 81, 33);
+
+
     --white: rgba(255,255,255,100%);
 
 
-
-
-
-
-
-
-
-
-
-    --to-top-button-hover-background-color: rgba(0, 0, 0, 0.7);
-    --link-background-color: rgba(255, 255, 255, 0.18);
-    --link-hover-background-color: rgba(255, 255, 255, 0.12);
-    --slide-blur:rgb(71, 55, 26);
-
-    --footer-bg: rgb(8, 8, 8);
     --footer-gold: rgb(212, 175, 55);
-    --footer-heading:rgb(212, 175, 55);
-    --form-background:rgb(18, 18, 18);
-    --form-border:rgb(61, 50, 19);
-    --input-background-color:rgb(8, 8, 8);
-    --input-border-color:rgb(109, 90, 32);
 
 
-    --gallery-body-bckgr:rgb(167, 164, 184);
     --modal-bckgr:rgba(0, 0, 0, 0.9);
     --modal-close-btn:rgb(171, 162, 162);
 
+    --surface-color: rgb(250, 247, 242);
 
+    --border-color:rgb(202, 180, 163);
 
   }
+
+  @media (prefers-color-scheme: dark) {
+    :root {
+        /* Main text */
+        --color-text-primary: rgb(244, 237, 226);
+        --text-color-preset-2: rgb(190, 178, 164);
+        --text-color-preset-3: rgb(250, 247, 242);
+
+
+        /* Accent */
+        --text-color-preset-4: rgb(218, 164, 67);
+        --text-color-preset-5: rgb(174, 111, 39);
+        --text-color-preset-6: rgb(145, 130, 113);
+
+        /* Backgrounds */
+        --color-background-body:rgb(27, 24, 21);
+        --color-background-hero-section:rgb(202, 180, 163);
+        --about-background-color: rgb(27, 24, 21);
+        --services-background-color: rgb(38, 33, 28);
+
+
+
+        /* Navigation */
+        --top-fixed-bar-background-color: rgb(27 24 21 / 94%);
+        --mobile-nav-background: rgb(38, 33, 28);
+
+        /* Buttons */
+        --to-top-button-background-color: rgb(38 33 28 / 80%);
+        --to-top-btn-bkgr: rgb(145 118 88 / 30%);
+
+        /* Accessibility */
+        --focus-color: rgb(230, 190, 91);
+        --active-link-color: rgb(218, 145, 69);
+
+        /* Surfaces */
+        --white: rgb(244, 237, 226);
+
+        /* Footer */
+        --footer-gold: rgb(218, 177, 69);
+
+        /* Modal */
+        --modal-bckgr: rgb(0 0 0 / 94%);
+        --modal-close-btn: rgb(205, 195, 181);
+
+        --surface-color: rgb(48, 42, 35);
+        --border-color:rgb(91, 78, 64);
+
+    }
+}
 
 *,*::before,*::after {
     box-sizing: border-box;
@@ -300,6 +173,7 @@ html {
 }
 
 body {
+    background-color: var(--color-background-body);
     font-family: 'DM Sans';
     font-style: normal;
     font-weight: 400;
@@ -311,12 +185,12 @@ body {
 #toTopBtn {
     display: none;
     position: fixed;
-    bottom: 1.2rem;
+    bottom: 4.5rem;
     right: 1.5rem;
     padding: 0.8em 1em;
     border-radius: 7px;
-    background-color: rgba(202, 180, 163,40%);
-    color: var(--text-color-preset-1);
+    background-color: var(--to-top-button-background-color);
+    color: var(--color-text-primary);
     font-size: 1.125rem;
     cursor: pointer;
     z-index: 3;
@@ -337,17 +211,17 @@ body {
     /* border: 2px solid red; */
     position: fixed;
     top: 0;
-    z-index: 1;
+    z-index: 4;
     inline-size: 100%;
 }
 
 .top-fixed-bar {
-    max-inline-size: 84rem; /* max-width of html*/
+    max-inline-size: 84rem;
     inline-size: 100%;
     margin: 0 auto;
     display: flex;
     justify-content:space-between;
-    padding: 0.75rem 1rem; /* plus padding*/
+    padding: 0.75rem 1rem;
     /* border:2px solid rgb(8, 0, 255); */
 }
 
@@ -367,7 +241,7 @@ body {
 
 .initials__name {
     display: block;
-    color: var(--text-color-preset-1);
+    color: var(--color-text-primary);
     font-size: 1.125rem;
     font-family:'Playfair Display';
 }
@@ -386,9 +260,12 @@ body {
     display: grid;
     gap: 0.35rem;
 }
+.open-nav-button:focus-visible{
+    outline: 1px solid var(--focus-color);
+}
 
 .open_hamb {
-    background-color: var(--text-color-preset-1);
+    background-color: var(--color-text-primary);
     block-size: 3px;
     inline-size: 1.5rem;
 }
@@ -399,7 +276,7 @@ body {
     transition: transform 0.5s ease;
     position: fixed;
     inset: 0;
-    z-index: 3;
+    z-index: 5;
     background-color: var(--mobile-nav-background);
     /* border: 2px solid red; */
 
@@ -427,7 +304,7 @@ body {
 .nav__mobile__link {
   text-align: center;
   text-decoration: none;
-  color: var(--text-color-preset-1);
+    color: var(--color-text-primary);
   display:block; /* makes the link fill the entire list item */
   padding: 0.7rem 1.1rem;
   border-radius: 10px;
@@ -437,12 +314,12 @@ body {
 }
 
 .nav__mobile__link.active {
-border: 2px solid var(--text-color-preset-1);
+border: 2px solid var(--color-text-primary);
 }
 
 
 .nav__mobile__link:focus-visible {
-  outline: 2px solid var(--text-color-preset-1);
+  outline: 2px solid var(--focus-color);
 }
 
 .nav__mobile__link:active {
@@ -467,7 +344,7 @@ border: 2px solid var(--text-color-preset-1);
     position: absolute;
     inline-size: 35px;
     block-size: 3px;
-    background-color: var(--text-color-preset-1);
+    background-color: var(--color-text-primary);
     border-radius: 999px;
 }
 
@@ -485,18 +362,9 @@ border: 2px solid var(--text-color-preset-1);
 }
 
 
-
-
-
-
-
-
-
-
-
 .hero-section {
     position: relative;
-
+    background-color:var(--color-background-hero-section);
 }
 
 .slide {
@@ -553,7 +421,6 @@ border: 2px solid var(--text-color-preset-1);
 }
 
 
-
 .hero__content {
     /* border: 2px solid red; */
     padding: 0 1rem;
@@ -603,7 +470,7 @@ border: 2px solid var(--text-color-preset-1);
 
 
 .hero__buttons__inquire:focus-visible{
-    outline: 2px solid var(--white);
+    outline: 2px solid var(--focus-color);
 
 }
 
@@ -618,15 +485,9 @@ border: 2px solid var(--text-color-preset-1);
     transition: border 0.3s ease;
 }
 
-
-
-
-
-
-
-
-
-
+.hero__buttons__meet-Larysa:focus-visible{
+    outline:1px solid var(--focus-color);
+}
 
 
 
@@ -645,14 +506,12 @@ border: 2px solid var(--text-color-preset-1);
 .about__image-container{
     /* border: 2px solid var(--text-color-preset-4); */
     transform:translateX(-120%);
-    /* opacity: 0; */
     transition: transform 1.5s ease, opacity 1.5s   ease;
 
 }
 
 .about__image-container.appears{
     transform:translateX(0);
-    /* opacity: 1; */
 }
 
 .about__image{
@@ -663,7 +522,6 @@ border: 2px solid var(--text-color-preset-1);
 }
 
     .about__content {
-    /* transform:translateX(100%); */
     opacity: 0;
     transition: transform 1.5s ease, opacity 1.5s ease;
     /* border: 2px solid green; */
@@ -671,7 +529,6 @@ border: 2px solid var(--text-color-preset-1);
 
     .about__content.appears{
         opacity: 1;
-        /* transform:translateX(0); */
     }
 
     .general__uptext{
@@ -681,7 +538,7 @@ border: 2px solid var(--text-color-preset-1);
 
     }
     .general__heading {
-        color: var(--text-color-preset-1);
+        color: var(--color-text-primary);
         font-size: clamp(1.875rem,5vw,2.25rem);
         font-family: 'Playfair Display';
         font-weight: 500;
@@ -707,7 +564,7 @@ border: 2px solid var(--text-color-preset-1);
     .role {
         block-size: 500px;
         position: relative;
-        opacity: 0;
+        opacity: 0.3;
         transition: opacity 1.5s ease;
 
         /* border: 2px solid blue; */
@@ -756,16 +613,9 @@ border: 2px solid var(--text-color-preset-1);
     }
 
 
-
-
-
-
-
-
-
     .services-section {
         /* border: 2px solid red; */
-        opacity: 0;
+        opacity: 0.3;
         transition: opacity 1.5s ease;
         background-color: var(--services-background-color);
     }
@@ -777,20 +627,6 @@ border: 2px solid var(--text-color-preset-1);
         max-inline-size: 84rem;
         padding: 6rem 1rem;
         margin: 0 auto;
-    }
-
-    .services__offer{
-        color: var(--text-color-preset-4);
-        font-size: 0.75rem;
-        letter-spacing: 0.3rem;
-    }
-
-
-    .services-section__main-heading{
-        color: var(--text-color-preset-1);
-        font-family: 'Playfair Display';
-        font-weight: 500;
-        margin-bottom: 1.5rem;
     }
 
     .services__grid{
@@ -808,16 +644,16 @@ border: 2px solid var(--text-color-preset-1);
 
 
     .services__grid-item{
-        background-color: var(--text-color-preset-3);
+        background-color: var(--surface-color);
         padding: 2rem;
-        border: 1px solid var(--text-color-preset-6);
+        border: 1px solid var(--border-color);
         /* border: 2px solid blue; */
     }
 
     .services__heading{
         margin: 1rem 0;
         font-size: 1.125rem;
-        color: var(--text-color-preset-1);
+        color: var(--color-text-primary);
         font-family: 'Playfair Display';
 
 
@@ -848,15 +684,26 @@ border: 2px solid var(--text-color-preset-1);
         color: var(--text-color-preset-2);
     }
 
-    .services__last-paragraph a {
-        font-size: 0.813rem;
-        color: var(--text-color-preset-4);
+    /* .services__last-paragraph a {
+
+    } */
+
+    #get-in-touch{
+    font-size: 0.813rem;
+    color: var(--text-color-preset-4);
     }
+
+    #get-in-touch:focus-visible{
+        outline: 1px solid var(--focus-color);
+    }
+
+
+
 
 
     .main-page__gallery__section{
         background-color: var(--about-background-color);
-        opacity: 0;
+        opacity: 0.3;
         transition: opacity 1.5s ease;
         /* border: 2px solid red; */
     }
@@ -872,12 +719,6 @@ border: 2px solid var(--text-color-preset-1);
     }
 
 
-    .main-page__gallery__uptext{
-        color: var(--text-color-preset-4);
-        font-size: 0.75rem;
-        letter-spacing: 0.2rem;
-    }
-
 
     .main-page__gallery__heading-container{
         display: flex;
@@ -890,17 +731,16 @@ border: 2px solid var(--text-color-preset-1);
 
     }
 
-    .main-page__gallery__heading{
-        font-family: 'Playfair Display';
-        font-size: clamp(1.875rem,5vw,2.25rem);
-        color: var(--text-color-preset-1);
-        font-weight: 400;
-    }
 
 
     .main-page__gallery__heading-link{
         color: var(--text-color-preset-4);
         font-size: 0.875rem;
+    }
+
+
+    .main-page__gallery__heading-link:focus-visible{
+        outline: 1px solid var(--focus-color);
     }
 
     .main-page__gallery{
@@ -912,8 +752,6 @@ border: 2px solid var(--text-color-preset-1);
     .main-page__gallery a{
         transition: transform 0.3s ease;
     }
-
-
 
 
     .main-page__gallery a:focus-visible{
@@ -930,15 +768,8 @@ border: 2px solid var(--text-color-preset-1);
     }
 
 
-
-
-
-
-
-
-
     .reviews-section{
-        opacity: 0;
+        opacity: 0.3;
         transition: opacity 1.5s ease;
         background-color: var(--services-background-color);
         /* border: 2px solid yellowgreen; */
@@ -995,7 +826,7 @@ border: 2px solid var(--text-color-preset-1);
         font-size: clamp(0.4rem, 5vw,1.5rem);
         /* border: 2px solid red; */
         text-align: center;
-        color: var(--text-color-preset-1);
+        color: var(--color-text-primary);
     }
 
     .center{
@@ -1005,18 +836,12 @@ border: 2px solid var(--text-color-preset-1);
     .review__name{
         text-align: center;
         font-size: 0.875rem;
-        color: var(--text-color-preset-1);
+        color: var(--color-text-primary);
     }
 
 
-
-
-
-
-
-
 .contact-section {
-    opacity: 0;
+    opacity: 0.3;
     transition: opacity 1.5s ease;
     background-color: var(--about-background-color);
     /* border: 2px solid red; */
@@ -1061,20 +886,13 @@ border: 2px solid var(--text-color-preset-1);
 
 .contact__content__location > :nth-child(4){
     font-size: 0.75rem;
-    color: var(--text-color-preset-1);
+    color: var(--color-text-primary);
 }
-
-
-
-
-
-
-
 
 
 .contact__heading{
     font-size: 0.75rem;
-    color:var(--text-color-preset-1);
+    color:var(--color-text-primary);
     /* border: 2px solid red; */
 }
 
@@ -1089,7 +907,7 @@ transition: color 0.3s ease;
 }
 
 .contact__link:focus-visible{
-    outline: 1px solid var(--text-color-preset-1);
+    outline: 1px solid var(--focus-color);
 }
 
 
@@ -1097,11 +915,6 @@ transition: color 0.3s ease;
     display: flex;
     gap: 1rem;
 }
-
-
-
-
-
 
 .contact__form {
   display: grid;
@@ -1155,7 +968,7 @@ transition: color 0.3s ease;
 
 
 #submit-btn:focus-visible {
-    outline: 2px solid var(--text-color-preset-1);
+    outline: 2px solid var(--focus-color);
 }
 
 
@@ -1173,7 +986,7 @@ display:block;
 .form__message__heading{
     font-size:1.5rem;
     font-family: 'Playfair Display';
-    color: var(--text-color-preset-1);
+    color: var(--color-text-primary);
 
 }
 
@@ -1184,9 +997,6 @@ display:block;
     font-family: 'EB Garamond';
 
 }
-
-
-
 
 
 .gallery__body {
@@ -1200,7 +1010,7 @@ display:block;
     max-inline-size: 84rem;
     padding: 6rem 1rem;
     margin: 0 auto;
-    opacity: 0;
+    opacity: 0.3;
     transition: opacity 1.5s ease;
 }
 
@@ -1218,11 +1028,6 @@ display:block;
     margin: 2rem auto 4rem;
     /* border: 2px solid blue; */
 }
-
-.gallery__image-wrapper {
-
-}
-
 
 
 .gallery__img-btn {
@@ -1381,17 +1186,7 @@ display:block;
     object-position: center;
     /* border: 2px solid red; */
     transition: opacity 0.3s ease;
-    /* cursor: pointer; */
 }
-/* .modal__list-image:hover{
-    opacity: 0.5;
-} */
-
-
-
-
-
-
 
 .modal__nav-buttons-container {
     position: absolute;
@@ -1399,22 +1194,14 @@ display:block;
     /* border: 2px solid blue; */
     padding: 0 1rem 0;
     width: 100%;
-    /* display: flex; */
     display: none;
 }
 
 .modal__next-btn,.modal__prev-btn  {
     /* border: 2px solid red; */
     color: var(--modal-close-btn);
-    /* position: absolute; */
-    /* top: 50%; */
-    /* right: 0; */
-    /* right: 5%; */
-    /* margin-left: auto; */
     font-size: 40px;
     transition: color 0.3s ease;
-
-
 }
 
 .modal__next-btn {
@@ -1427,11 +1214,8 @@ display:block;
     outline: 2px solid var(--white);
 }
 
-
-
-
 .videos{
-    opacity: 0;
+    opacity: 0.3;
     transition: opacity 1.5s ease;
     background-color: var(--services-background-color);
 }
@@ -1453,10 +1237,6 @@ display:block;
     /* border: 2px solid blue; */
 }
 
- .video__grid-card{
-    /* border: 2px solid red; */
- }
-
  .iframe__container{
     aspect-ratio: 16 / 9;
  }
@@ -1469,7 +1249,7 @@ display:block;
  .performer-name{
     margin-top: 1rem;
     font-size: 0.875rem;
-    color: var(--text-color-preset-1);
+    color: var(--color-text-primary);
     font-family: 'EB Garamond';
     font-style: italic;
  }
@@ -1501,7 +1281,9 @@ display:block;
     padding: 0 1rem;
     /* border: 2px solid red; */
 }
+
  .footer__name{
+    color: var(--color-text-primary);
     font-family: 'Playfair Display';
  }
 
@@ -1520,13 +1302,16 @@ display:block;
     font-size: 0.875rem;
     display: block;
     /* border: 2px solid black; */
-
  }
 
+ .logo__link:focus-visible{
+    outline: 1px solid var(--focus-color);
+ }
+ 
  #logoVal{
-    font-family: 'EB Garamond';
+    font-family:cursive;
     font-style: italic;
-    color: var(--text-color-preset-1);
+    color: var(--color-text-primary);
     /* border: 2px solid red; */
  }
 
@@ -1543,7 +1328,7 @@ display:block;
 
 
         .contact__link:hover{
-            color: var(--text-color-preset-1);
+            color: var(--color-text-primary);
         }
 
 
@@ -1572,7 +1357,6 @@ display:block;
         }
         .nav__get-in-touch:hover{
             background-color: var(--text-color-preset-5);
-            /* color: var(--text-color-preset-2); */
         }
 
         .hero__buttons__meet-Larysa:hover{
@@ -1624,16 +1408,6 @@ display:block;
         display: none;
     }
 
-
-    .nav__mobile {
-        display: none;
-    }
-
-    .top-fixed-bar {
-    }
-
-
-
     .nav__desktop {
         display: flex;
         align-items:center;
@@ -1643,7 +1417,7 @@ display:block;
     }
 
     .nav__desktop__link {
-        color: var(--text-color-preset-1);
+            color: var(--color-text-primary);
         text-decoration: none;
         display: block;
         text-align: center;
@@ -1714,22 +1488,13 @@ display:block;
 
     .about__image-container{
         flex: 1;
-        /* width: 100%; */
-        /* border: 2px solid red; */
+
     }
 
-    .about__image {
-        /* display: block; */
-        /* inline-size: 100%; */
-        /* block-size: auto; */
-    }
 
     .about__content{
     flex: 1;
-        /* width: 100%; */
     }
-
-
 
 
     .role__text{
@@ -1754,28 +1519,9 @@ display:block;
     }
 
 
-    .modal__top-image{
-        /* inline-size: 80%; */
-
-    }
-
-    #modal__window.active {
-
-        /* align-items: flex-start; */
-    }
-
     .modal__nav-buttons-container {
         display: flex;
     }
-
-
-
-
-
-
-
-
-
 
 
     .contact__content--flex {
