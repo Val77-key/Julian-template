@@ -334,7 +334,7 @@ function prevModalSlide() {
 
         modalImageItem.forEach(item => item.classList.remove('active'));
         modalImageItem[index].classList.add("active");
-        modalImageItem[index].focus();
+        // modalImageItem[index].focus();
     }
 
 
